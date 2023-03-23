@@ -24,3 +24,36 @@
     margin-top: 19px;
     margin-bottom: 19px;
 }
+.headline-section {
+    width: 100%;
+    padding: 139px 0;
+    background-color: #1C1A19;
+    white-space: normal;
+    position: relative;
+    background-image: url(/images/Group.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.headline-section h1{
+    color: #FF6B00;
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 56px;
+    margin: 0 24px;
+
+}
+.headline-section h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 24px;
+}
+
+.headline-section p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 12px 24px;
+  
+}
