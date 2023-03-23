@@ -30,9 +30,6 @@
     background-color: #1C1A19;
     white-space: normal;
     position: relative;
-    background-image: url(/images/Group.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
 }
 .headline-section h1{
     color: #FF6B00;
@@ -54,6 +51,20 @@
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    margin: 12px 24px;
-  
+    margin: 12px 24px;  
+}
+
+.social-media{
+    margin: 0 24px;
+    display: flex;
+    justify-content: flex-start;
+}
+.social-media button {
+    background-color: transparent;
+    border: none;
+}
+.headline-section > img{
+    bottom: 0;
+    right: 0;
+    position: absolute;    
 }
