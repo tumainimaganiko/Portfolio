@@ -1,70 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@500;700&display=swap');
-*{
-    margin: 0;
+
+* {
+  margin: 0;
 }
+
 .toolbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #3C3A39;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3c3a39;
+  width: 100%;
+  align-items: center;
 }
+
 #my-logo {
-    color: #FFFFFF;
-    font-size: 18px;
-    line-height: 24px;
-    padding-left: 24px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
+
 .menu-bar {
-    color: #ACB7C3;
-    font-size:36px;
-    padding-right: 24px;
-    margin-top: 19px;
-    margin-bottom: 19px;
+  color: #acb7c3;
+  font-size: 36px;
+  padding-right: 24px;
+  margin-top: 19px;
+  margin-bottom: 19px;
 }
+
 .headline-section {
-    width: 100%;
-    padding: 139px 0;
-    background-color: #1C1A19;
-    white-space: normal;
-    position: relative;
-}
-.headline-section h1{
-    color: #FF6B00;
-    font-family: 'Crete Round', serif;
-    font-weight: 400;
-    font-size: 56px;
-    margin: 0 24px;
-
-}
-.headline-section h2{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    margin: 0 24px;
+  width: 100%;
+  padding: 139px 0;
+  background-color: #1c1a19;
+  white-space: normal;
+  position: relative;
 }
 
-.headline-section p{
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    margin: 12px 24px;  
+.headline-section h1 {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 56px;
+  margin: 0 24px;
 }
 
-.social-media{
-    margin: 0 24px;
-    display: flex;
-    justify-content: flex-start;
+.headline-section h2 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 24px;
 }
+
+.headline-section p {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 12px 24px;
+}
+
+.social-media {
+  margin: 0 24px;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .social-media button {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
-.headline-section > img{
-    bottom: 0;
-    right: 0;
-    position: absolute;    
+
+.headline-section > img {
+  bottom: 0;
+  right: 0;
+  position: absolute;
 }
