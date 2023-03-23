@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@500;700&display=swap');
 *{
     margin: 0;
+}
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3C3A39;
+    width: 100%;
+    align-items: center;
+}
+#my-logo {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.menu-bar {
+    color: #ACB7C3;
+    font-size:36px;
+    padding-right: 24px;
+    margin-top: 19px;
+    margin-bottom: 19px;
 }
