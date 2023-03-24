@@ -163,5 +163,20 @@
   line-height: 20px;
   letter-spacing: 0em;
   color: #091E42;
+}
 
+.card-2 > a {
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #FFFFFF;
+  display: block;
+  background-color: #ff6b00;
+  padding: 12px;
+  align-self: flex-start;
+  margin-left: 24px;
 }
