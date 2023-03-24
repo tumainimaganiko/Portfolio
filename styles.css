@@ -79,11 +79,11 @@
   justify-content: flex-start;
 }
 
-ul {
+.social-media ul {
   list-style-type: none;
 }
 
-li {
+.social-media li {
   float: left;
   padding: 5px;
 }
@@ -118,6 +118,7 @@ li {
 .card-2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .card-2 img {
   margin: 0 24px;
@@ -139,4 +140,28 @@ li {
   font-size: 16px;
   line-height: 24px;
   margin: 12px 24px;
+  color: #091E42;
+}
+
+.card-2 ul {
+  display: flex;
+  list-style-type: none;
+  padding: 10px 12px;
+}
+
+.card-2 ul li {
+  padding: 10px 12px;
+  border: 1px solid #8993A4;
+  margin-right: 12px;
+}
+
+.card-2 ul a {
+  text-decoration: none;  
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #091E42;
+
 }
