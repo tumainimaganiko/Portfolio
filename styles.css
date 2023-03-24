@@ -144,19 +144,19 @@
   color: #091E42;
 }
 
-.card-2 ul {
+.link-1 {
   display: flex;
   list-style-type: none;
   padding: 10px 12px;
 }
 
-.card-2 ul li {
+.link-1 li {
   padding: 10px 12px;
   border: 1px solid #8993A4;
   margin-right: 12px;
 }
 
-.card-2 ul a {
+.link-1 a {
   text-decoration: none;  
   font-family: 'Inter', sans-serif;
   font-size: 15px;
@@ -166,9 +166,10 @@
   color: #091E42;
 }
 
-.card-2 > a {
+.see-project {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
+  background-color: #ff6b00;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -176,10 +177,13 @@
   text-align: center;
   color: #FFFFFF;
   display: block;
-  background-color: #ff6b00;
+}
+
+.card-2 > a {  
+  display: block;
   padding: 12px;
-  align-self: flex-start;
   margin-left: 24px;
+  align-self: flex-start;
 }
 
 .card-3 {
@@ -210,4 +214,18 @@
   text-align: left;  
   color: #FFFFFF;
   margin: 12px 13px;
+}
+
+.card-3  a {
+  color: #FFFFFF;
+}
+
+.card-3 ul li {
+  background-color: rgba(255, 255, 255, 0.24);
+  border: none;
+}
+
+.card-3 > a {
+  padding: 12px;
+  margin-top: 15px;
 }
