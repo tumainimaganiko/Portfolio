@@ -13,12 +13,21 @@
 }
 
 #my-logo {
-  color: #fff;
   font-size: 18px;
   line-height: 24px;
   padding-left: 24px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+}
+
+.social-media a {
+  background-color: transparent;
+  border: none;
+}
+
+#my-logo > a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .menu-bar {
@@ -30,11 +39,15 @@
 }
 
 .headline-section {
-  width: 100%;
-  padding: 139px 0;
+  display: flex;
+  order: 0;
+  flex-direction: column;
   background-color: #1c1a19;
-  white-space: normal;
-  position: relative;
+  width: 100%;
+  height: 650px;
+  background-image: url('/images/Group.png');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .headline-section h1 {
@@ -42,7 +55,7 @@
   font-family: 'Crete Round', serif;
   font-weight: 400;
   font-size: 56px;
-  margin: 0 24px;
+  margin: 120px 24px 12px;
 }
 
 .headline-section h2 {
@@ -53,7 +66,7 @@
   margin: 0 24px;
 }
 
-.headline-section p {
+#paragraph {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -66,13 +79,27 @@
   justify-content: flex-start;
 }
 
-.social-media button {
-  background-color: transparent;
-  border: none;
+ul {
+  list-style-type: none;
 }
 
-.headline-section > img {
+li {
+  float: left;
+  padding: 5px;
+}
+
+
+
+/* .headline-section > img {
   bottom: 0;
   right: 0;
+  position: inherit;
+} */
+.headline-section > img {
   position: absolute;
+  left: 20%;
+
+  /* right: 48.75%; */
+  top: 50%;
+  bottom: -12.46%;
 }
