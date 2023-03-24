@@ -88,18 +88,9 @@ li {
   padding: 5px;
 }
 
-
-
-/* .headline-section > img {
-  bottom: 0;
-  right: 0;
-  position: inherit;
-} */
 .headline-section > img {
   position: absolute;
   left: 20%;
-
-  /* right: 48.75%; */
   top: 50%;
   bottom: -12.46%;
 }
