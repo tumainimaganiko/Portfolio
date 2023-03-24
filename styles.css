@@ -179,7 +179,7 @@
   display: block;
 }
 
-.card-2 > a {  
+.button-1 {  
   display: block;
   padding: 12px;
   margin-left: 24px;
@@ -232,4 +232,37 @@
 
 .last {
   margin-bottom: 120px;
+}
+
+.about-myself {
+  display: flex;
+  flex-direction: column;
+  background-color: #1C1A19;
+  ;
+}
+
+.about-myself h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;  
+  color: #ff6b00;
+  margin: 120px 24px 24px;
+}
+
+.about-myself p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 24px;
+  color: #F4F5F7;
+}
+
+.about-myself > a {
+  margin-top: 24px;
 }
