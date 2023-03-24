@@ -94,3 +94,23 @@ li {
   top: 50%;
   bottom: -12.46%;
 }
+
+.works {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.card-1 {
+  display: flex;
+  align-items: center;
+  font-family: 'Crete Round', serif;
+  margin: 120px 24px 104px 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #212121;
+  font-size: 40px;
+  line-height: 52px;
+  font-style: normal;
+  font-weight: 400;
+  width: 327px;
+  height: 83px;
+}
