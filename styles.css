@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@500;700&display=swap');
 
 * {
   margin: 0;
@@ -113,4 +113,30 @@ li {
   font-weight: 400;
   width: 327px;
   height: 83px;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+}
+.card-2 img {
+  margin: 0 24px;
+}
+
+#story {
+  font-size: 32px;
+  line-height: 52px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 12px 24px 0;
+}
+
+.card-2 p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 12px 24px;
 }
