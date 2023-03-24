@@ -119,6 +119,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 12px;
 }
 .card-2 img {
   margin: 0 24px;
@@ -167,7 +168,7 @@
 
 .card-2 > a {
   text-decoration: none;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -179,4 +180,34 @@
   padding: 12px;
   align-self: flex-start;
   margin-left: 24px;
+}
+
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/profesional.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 12px 24px;
+}
+
+.card-3 h2 {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  margin: 72px 19px 12px 13px;  
+  color: #FFFFFF;
+}
+
+.card-3 p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;  
+  color: #FFFFFF;
+  margin: 12px 13px;
 }
