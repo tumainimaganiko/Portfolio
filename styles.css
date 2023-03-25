@@ -146,7 +146,7 @@
   padding: 10px 12px;
 }
 
-.link-1 li {  
+.link-1 li {
   border: 1px solid #8993a4;
   margin-right: 12px;
 }
@@ -159,20 +159,8 @@
   line-height: 20px;
   letter-spacing: 0;
   color: #091e42;
-  padding:10px 12px;
+  padding: 10px 12px;
   display: block;
-}
-
-.btn li a:visited {
-  background-color: #ff6b00;
-}
-
-.btn li:hover {
-  background-color: #FFF5E1;
-}
-
-.btn a:active {
-  background-color: rgb(224,83,4);
 }
 
 .see-project {
@@ -277,6 +265,18 @@
 
 .about-myself > a {
   margin-top: 24px;
+}
+
+.btn a:active {
+  background-color: rgb(224, 83, 4);
+}
+
+.btn li a:visited {
+  background-color: #ff6b00;
+}
+
+.btn li:hover {
+  background-color: #fff5e1;
 }
 
 #my-logo > a {
