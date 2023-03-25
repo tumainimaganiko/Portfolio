@@ -158,7 +158,7 @@
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0;
-  color: #091e42;
+  color: #fff;
   padding: 10px 12px;
   display: block;
 }
@@ -267,16 +267,23 @@
   margin-top: 24px;
 }
 
-.btn a:active {
-  background-color: rgb(224, 83, 4);
+.btn li a:link {
+  background-color:#F55800 ;
+  color: #fff;
 }
 
 .btn li a:visited {
   background-color: #ff6b00;
 }
 
-.btn li:hover {
+.btn li a:hover {
   background-color: #fff5e1;
+  color: #e05304;
+}
+
+.btn li a:active {
+  background-color: #e05304;
+  color: #fff;
 }
 
 #my-logo > a {
