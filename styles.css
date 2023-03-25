@@ -269,7 +269,7 @@
   margin-top: 24px;
 }
 
-.about-myself img {
+.about-myself > img {
   align-self: flex-end;
   position: relative;
   top: -60px;
@@ -281,16 +281,19 @@
 }
 
 .font {
+  font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;  
+  color: #FFFFFF;
 }
 
 .categories {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .inner-list  {
@@ -301,8 +304,23 @@
   letter-spacing: 0em;
   text-align: center;
   color: #FFFFFF;  
+  list-style-type: none;
 }
 
-ul {
+.inner-list li {
+  margin-bottom: 32px;
+}
+
+.outer-list {
   list-style-type: none;
+}
+.footer-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-heading span {
+  margin-left: 12px;
 }
