@@ -40,7 +40,7 @@
   background-color: #1c1a19;
   width: 100%;
   height: 650px;
-  background-image: url('./images/Group.png');
+  background-image: url('images/Group.png');
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
@@ -186,7 +186,7 @@
 .card-3 {
   display: flex;
   flex-direction: column;
-  background-image: url('./images/profesional.png');
+  background-image: url('images/profesional.png');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 12px 24px;
