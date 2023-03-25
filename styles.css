@@ -25,11 +25,6 @@
   border: none;
 }
 
-#my-logo > a {
-  text-decoration: none;
-  color: #fff;
-}
-
 .menu-bar {
   color: #acb7c3;
   font-size: 36px;
@@ -121,6 +116,7 @@
   align-items: center;
   margin-bottom: 12px;
 }
+
 .card-2 img {
   margin: 0 24px;
 }
@@ -141,7 +137,7 @@
   font-size: 16px;
   line-height: 24px;
   margin: 12px 24px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .link-1 {
@@ -152,18 +148,18 @@
 
 .link-1 li {
   padding: 10px 12px;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   margin-right: 12px;
 }
 
 .link-1 a {
-  text-decoration: none;  
+  text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: 0em;
-  color: #091E42;
+  letter-spacing: 0;
+  color: #091e42;
 }
 
 .see-project {
@@ -175,11 +171,11 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
   display: block;
 }
 
-.button-1 {  
+.button-1 {
   display: block;
   padding: 12px;
   margin-left: 24px;
@@ -200,9 +196,9 @@
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  letter-spacing: 0em;
-  margin: 72px 19px 12px 13px;  
-  color: #FFFFFF;
+  letter-spacing: 0;
+  margin: 72px 19px 12px 13px;
+  color: #fff;
 }
 
 .card-3 p {
@@ -210,14 +206,18 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;  
-  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
   margin: 12px 13px;
 }
 
-.card-3  a {
-  color: #FFFFFF;
+.card-3 a {
+  color: #fff;
+}
+
+.inner-list li {
+  margin-bottom: 32px;
 }
 
 .card-3 ul li {
@@ -237,10 +237,7 @@
 .about-myself {
   display: flex;
   flex-direction: column;
-  background-color: #1C1A19;
-  /* background-image: url('/images/group-2.png');
-  background-repeat: no-repeat;
-  background-position: 708px 100%; */
+  background-color: #1c1a19;
 }
 
 .about-myself h1 {
@@ -249,7 +246,7 @@
   font-weight: 400;
   line-height: 88px;
   letter-spacing: 0.3700000047683716px;
-  text-align: left;  
+  text-align: left;
   color: #ff6b00;
   margin: 120px 24px 24px;
 }
@@ -259,14 +256,19 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   margin: 0 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
 }
 
 .about-myself > a {
   margin-top: 24px;
+}
+
+#my-logo > a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .about-myself > img {
@@ -276,7 +278,7 @@
 }
 
 .about-myself hr {
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #fff;
   margin: -45px 24px 0;
 }
 
@@ -285,9 +287,9 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
-  text-align: center;  
-  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
 }
 
 .categories {
@@ -297,19 +299,15 @@
   align-items: center;
 }
 
-.inner-list  {
-  font-family: Inter;
+.inner-list {
+  font-family: 'Inter', sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 43px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
-  color: #FFFFFF;  
+  color: #fff;
   list-style-type: none;
-}
-
-.inner-list li {
-  margin-bottom: 32px;
 }
 
 .outer-list {
