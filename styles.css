@@ -40,7 +40,7 @@
   background-color: #1c1a19;
   width: 100%;
   height: 650px;
-  background-image: url('/images/Group.png');
+  background-image: url('./images/Group.png');
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
@@ -146,8 +146,7 @@
   padding: 10px 12px;
 }
 
-.link-1 li {
-  padding: 10px 12px;
+.link-1 li {  
   border: 1px solid #8993a4;
   margin-right: 12px;
 }
@@ -160,6 +159,20 @@
   line-height: 20px;
   letter-spacing: 0;
   color: #091e42;
+  padding:10px 12px;
+  display: block;
+}
+
+.btn li a:visited {
+  background-color: #ff6b00;
+}
+
+.btn li:hover {
+  background-color: #FFF5E1;
+}
+
+.btn a:active {
+  background-color: rgb(224,83,4);
 }
 
 .see-project {
@@ -185,7 +198,7 @@
 .card-3 {
   display: flex;
   flex-direction: column;
-  background-image: url('/images/profesional.png');
+  background-image: url('./images/profesional.png');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 12px 24px;
@@ -240,7 +253,7 @@
   background-color: #1c1a19;
 }
 
-.about-myself h1 {
+.about-myself h2 {
   font-family: 'Crete Round', serif;
   font-size: 72px;
   font-weight: 400;
