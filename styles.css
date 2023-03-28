@@ -419,9 +419,16 @@
   margin-top: 24px;
   background-color: #FF6B00;
   color: #fff;
-  border: none
+  border: none;
+  margin-bottom: 78px;
 }
 
-.contact-form hr {
-  margin-top: 78px;
+footer ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  list-style-type: none;
+  margin-top: 25px;
+  padding-left: 0;
 }
