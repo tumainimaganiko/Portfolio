@@ -363,3 +363,25 @@
   text-align: center;
   color: #172B4D;
 }
+
+.input-font {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 295px;
+  height: 18px;
+  border: none;
+  padding: 0;
+}
+
+.container {
+  border-bottom: 1px solid #DBD8D7;
+  display: flex;
+  justify-content: center;
+  padding: 15px 16px;
+  margin-left: 23px;
+  margin-right: 25px;
+}
