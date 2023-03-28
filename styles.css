@@ -430,3 +430,22 @@ footer ul {
   border: none;
   margin-bottom: 78px;
 }
+
+#submit:link {
+  background-color: #f55800;
+  color: #fff;
+}
+
+#submit:visited {
+  background-color: #ff6b00;
+}
+
+#submit:hover {
+  background-color:#dbd8d7;
+  color: #e05304;
+}
+
+#submit:active {
+  background-color: #e05304;
+  color: #fff;
+}
