@@ -346,3 +346,20 @@
 .footer-heading span {
   margin-left: 12px;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  font-family: 'Inter', sans-serif;
+  margin: 69px 24px 0;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #172B4D;
+}
