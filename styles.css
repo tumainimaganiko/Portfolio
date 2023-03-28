@@ -425,15 +425,10 @@ footer ul {
   padding: 12px;
   margin: 0 24px;
   margin-top: 24px;
-  background-color: #ff6b00;
+  background-color: #F55800;
   color: #fff;
   border: none;
   margin-bottom: 78px;
-}
-
-#submit:link {
-  background-color: #f55800;
-  color: #fff;
 }
 
 #submit:visited {
@@ -441,11 +436,17 @@ footer ul {
 }
 
 #submit:hover {
-  background-color: #dbd8d7;
-  color: #e05304;
+  background-color:#FFF5E1;
+  color: #F55800;
+  border: 1px solid #F55800;
 }
 
 #submit:active {
-  background-color: #e05304;
+  background-color: #E05304;
   color: #fff;
+}
+
+#submit:disabled {
+  background-color: #F4F1F0;
+  color: #5B5957;
 }
