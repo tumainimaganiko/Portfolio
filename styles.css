@@ -385,3 +385,24 @@
   margin-left: 23px;
   margin-right: 25px;
 }
+
+.last-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+#sms {
+  width: 303px;
+  height: 90px;
+  background-color: rgb(251, 248, 247);
+  padding: 12px;
+  border: none;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;    
+}
