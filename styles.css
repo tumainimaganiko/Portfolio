@@ -33,6 +33,10 @@
   margin-bottom: 19px;
 }
 
+.menu-bar ul {
+  display: none;
+}
+
 .headline-section {
   display: flex;
   order: 0;
@@ -449,4 +453,35 @@ footer ul {
 #submit:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
+}
+
+@media screen and (min-width:768px) {
+  #my-logo {
+    padding-left: 154px;
+  }
+
+  .menu-bar {
+    margin-right: 154px;
+  }
+  .menu-bar > img {
+    display: none;
+  }
+
+  .menu-bar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    gap: 30px;
+  }
+
+  .menu-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
