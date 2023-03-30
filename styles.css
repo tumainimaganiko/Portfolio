@@ -328,11 +328,14 @@ footer ul {
   top: -60px;
 }
 
-.about-myself hr {
+#line-1 {
   border-bottom: 1px solid #fff;
   margin: -45px 24px 0;
 }
 
+#line-2 {
+  display: none;
+}
 .font {
   font-family: 'Inter', sans-serif;
   font-size: 32px;
@@ -601,8 +604,15 @@ footer ul {
     background-position: right 10%;
   }
 
-  .about-myself hr {
+  #line-1 {
     display: none;
+  }
+
+  #line-2 {
+    display: block;
+    color: #fff;
+    margin-top: 2%;
+    margin-bottom: 1%;
   }
 
   #frame {
@@ -612,14 +622,22 @@ footer ul {
   .categories {
     flex-direction: row;
     justify-content: space-around;
+    padding-top: 50px;
   }
 
   .outer-list {
+    
   }
   .inner-list li {
     margin-bottom: 0;
+    padding-left: 0px;
   }
 
-  .framework {
+  .contact-form {
+    flex-direction: row;
+  }
+
+  form {
+    margin-top: 60px;
   }
 }
