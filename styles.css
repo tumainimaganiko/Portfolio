@@ -98,10 +98,7 @@ footer ul {
 }
 
 .headline-section > img {
-  position: absolute;
-  left: 20%;
-  top: 50%;
-  bottom: -12.46%;
+  display: none;
 }
 
 .works {
@@ -455,13 +452,17 @@ footer ul {
   color: #5b5957;
 }
 
-@media screen and (min-width:768px) {
+#illustration {
+    display: none;
+}
+
+@media only screen and (min-width:768px) {
   #my-logo {
-    padding-left: 154px;
+    padding-left: 10%;
   }
 
   .menu-bar {
-    margin-right: 154px;
+    margin-right: 13%;
   }
   .menu-bar > img {
     display: none;
@@ -477,11 +478,50 @@ footer ul {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-    gap: 30px;
+    gap: 10px;
   }
 
   .menu-bar ul li a {
     color: #fff;
     text-decoration: none;
+  }
+
+  .headline-section {
+    background-image: none;
+    background-position:right top;
+    flex-direction: row-reverse;
+    background-size: 50%;
+  }
+
+  .headline-section > img {
+    position: absolute;
+    right: 10px;
+  }
+
+  .headline-section > img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 80%;
+  }
+
+  #paragraph {
+    width: 50%;
+  } 
+
+  .social-media ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .headline-section > img {
+    width: auto;
+    height: 80%;
   }
 }
