@@ -137,6 +137,9 @@ footer ul {
   margin: 0 24px;
 }
 
+#gym-2 {
+  display: none;
+}
 #story {
   font-size: 32px;
   line-height: 52px;
@@ -179,6 +182,10 @@ footer ul {
   display: block;
 }
 
+.card-2 ul {
+  padding: 0 19px;
+}
+
 .see-project {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
@@ -193,6 +200,14 @@ footer ul {
 }
 
 .button-1 {
+  display: inline-block;
+  padding: 12px;
+  margin-left: 24px;
+  align-self: flex-start;
+  margin-top: 24px;
+}
+
+.button-2 {
   display: block;
   padding: 12px;
   margin-left: 24px;
@@ -461,7 +476,7 @@ footer ul {
     display: none;
 }
 
-@media only screen and (min-width:768px) {
+ @media only screen and (min-width:768px) {
   #my-logo {
     padding-left: 10%;
   }
@@ -524,11 +539,14 @@ footer ul {
   }
 
   .works {
-    grid-template-columns: auto auto ;
+    grid-template-columns: 31.83% 31.83% 31.83%;
+    margin-left: 35px;
+    margin-bottom: 6%;
+    grid-gap: 15px;
   }
 
   .card-1 {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
     border-bottom: none;
     flex-direction: row;
     width: 100%;
@@ -540,20 +558,34 @@ footer ul {
     width: 50%;
     padding-left: 24px;
   }
-}
 
-@media only screen and (min-width:1024px) {
-  .headline-section > img {
-    width: auto;
-    height: 80%;
-  }
-
-  .works {
-    grid-template-columns: auto auto auto;
-  }
-
-  .card-1 {
+  .card-2 {
     grid-column: 1 / span 3;
-    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #gym-1 {
+    display: none;
+  }
+
+  #gym-2 {
+    display: block;
+    width: 50%;
+    height: 90%;
+    margin-right: 0px;
+  }
+
+  .card-3 {
+    margin: 12px;
+    align-items: center;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .last {
+    margin-bottom: 12px;
   }
 }
