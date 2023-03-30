@@ -362,7 +362,6 @@ footer ul {
 }
 
 .outer-list {
-  list-style-type: none;
   margin: 0 24px;
   padding-left: 0;
 }
@@ -587,5 +586,40 @@ footer ul {
 
   .last {
     margin-bottom: 12px;
+  }
+
+  #about-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .about-myself {
+    background-image: url('images/last\ image.png');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: right 10%;
+  }
+
+  .about-myself hr {
+    display: none;
+  }
+
+  #frame {
+    display: none;
+  }
+
+  .categories {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .outer-list {
+  }
+  .inner-list li {
+    margin-bottom: 0;
+  }
+
+  .framework {
   }
 }
