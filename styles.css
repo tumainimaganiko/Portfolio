@@ -109,18 +109,23 @@ footer ul {
 .card-1 {
   display: flex;
   align-items: center;
-  font-family: 'Crete Round', serif;
   margin: 120px 24px 104px 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #212121;
-  font-size: 40px;
-  line-height: 52px;
-  font-style: normal;
-  font-weight: 400;
   width: 327px;
   height: 83px;
 }
 
+.card-1 h2 {
+  font-size: 40px;
+  line-height: 52px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Crete Round', serif;
+}
+.card-1 img {
+  display: none;
+}
 .card-2 {
   display: flex;
   flex-direction: column;
@@ -517,11 +522,38 @@ footer ul {
     align-items: center;
     justify-content: center;
   }
+
+  .works {
+    grid-template-columns: auto auto ;
+  }
+
+  .card-1 {
+    grid-column: 1 / span 2;
+    border-bottom: none;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+
+  .card-1 img {
+    display: block;
+    width: 50%;
+    padding-left: 24px;
+  }
 }
 
 @media only screen and (min-width:1024px) {
   .headline-section > img {
     width: auto;
     height: 80%;
+  }
+
+  .works {
+    grid-template-columns: auto auto auto;
+  }
+
+  .card-1 {
+    grid-column: 1 / span 3;
+    padding: 0 5%;
   }
 }
