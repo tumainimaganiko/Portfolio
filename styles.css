@@ -479,6 +479,7 @@ footer ul {
 }
 
 @media only screen and (min-width: 768px) {
+
   #my-logo {
     padding-left: 10%;
   }
@@ -728,5 +729,15 @@ footer ul {
 
   #submit {
     margin-left: 0;
+  }
+
+  .button-1{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+
+  .button-1:hover{
+    transform: translate(5px, 5px);
   }
 }
