@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@500;700&display=swap");
 
 * {
   margin: 0;
@@ -16,7 +16,7 @@
   font-size: 18px;
   line-height: 24px;
   padding-left: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -54,14 +54,14 @@ footer ul {
   background-color: #1c1a19;
   width: 100%;
   height: 650px;
-  background-image: url('images/Group.png');
+  background-image: url("images/Group.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
 .headline-section h1 {
   color: #ff6b00;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: 400;
   font-size: 56px;
   margin: 120px 24px 12px;
@@ -69,7 +69,7 @@ footer ul {
 
 .headline-section h2 {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
   margin: 0 24px;
@@ -77,7 +77,7 @@ footer ul {
 
 #paragraph {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 12px 24px;
 }
@@ -121,7 +121,7 @@ footer ul {
   line-height: 52px;
   font-style: normal;
   font-weight: 400;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
 }
 
 .card-1 img {
@@ -146,14 +146,14 @@ footer ul {
 #story {
   font-size: 32px;
   line-height: 52px;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   margin: 12px 24px 0;
 }
 
 .card-2 p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -175,7 +175,7 @@ footer ul {
 
 .link-1 a {
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -191,7 +191,7 @@ footer ul {
 
 .see-project {
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #ff6b00;
   font-size: 17px;
   font-weight: 700;
@@ -220,14 +220,14 @@ footer ul {
 .card-3 {
   display: flex;
   flex-direction: column;
-  background-image: url('images/profesional.png');
+  background-image: url("images/profesional.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 12px 24px;
 }
 
 .card-3 h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
@@ -237,7 +237,7 @@ footer ul {
 }
 
 .card-3 p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -276,7 +276,7 @@ footer ul {
 }
 
 .about-myself h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 72px;
   font-weight: 400;
   line-height: 88px;
@@ -287,7 +287,7 @@ footer ul {
 }
 
 .about-myself p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -341,7 +341,7 @@ footer ul {
 }
 
 .font {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -358,7 +358,7 @@ footer ul {
 }
 
 .inner-list {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 43px;
@@ -390,7 +390,7 @@ footer ul {
 }
 
 .contact-form h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 69px 24px 0;
   font-size: 32px;
   font-weight: 700;
@@ -433,7 +433,7 @@ footer ul {
   background-color: rgb(251, 248, 247);
   padding: 12px;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-style: italic;
   font-weight: 400;
@@ -443,7 +443,7 @@ footer ul {
 }
 
 #submit {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -479,7 +479,6 @@ footer ul {
 }
 
 @media only screen and (min-width: 768px) {
-
   #my-logo {
     padding-left: 10%;
   }
@@ -497,7 +496,7 @@ footer ul {
     flex-direction: row;
     list-style-type: none;
     justify-content: space-between;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -632,7 +631,8 @@ footer ul {
   }
 
   .card-3:hover {
-    background-image: url('images/Mask\ Group.png');
+    transform: scale(1.08);
+    background-image: url("images/Mask\ Group.png");
     display: flex;
     justify-content: flex-end;
   }
@@ -671,7 +671,7 @@ footer ul {
   }
 
   .about-myself {
-    background-image: url('images/last\ image.png');
+    background-image: url("images/last\ image.png");
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: right 10%;
@@ -731,13 +731,13 @@ footer ul {
     margin-left: 0;
   }
 
-  .button-1{
+  .button-1 {
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
   }
 
-  .button-1:hover{
+  .button-1:hover {
     transform: translate(5px, 5px);
   }
 }
