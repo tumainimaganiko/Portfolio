@@ -584,12 +584,12 @@ footer ul {
     flex-direction: column;
     justify-content: flex-start;
   }
-  
+
   #story {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
-  
+
   #gym-2 {
     display: block;
     width: 50%;
@@ -728,6 +728,6 @@ footer ul {
   }
 
   #submit {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
