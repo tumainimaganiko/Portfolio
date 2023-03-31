@@ -682,8 +682,7 @@ footer ul {
   #line-2 {
     display: block;
     color: #fff;
-    margin-top: 10%;
-    margin-bottom: 1%;
+    margin: 8% 8% 0%;
   }
 
   #frame {
