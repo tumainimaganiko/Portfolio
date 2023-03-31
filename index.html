@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Tumaini-Maganiko portfolio</title>
 </head>
 <body>
@@ -14,10 +15,18 @@
         </div>
         <nav class="menu-bar">
             <img src="images/Union.png" alt="menu bar">
+            <ul class="social-media">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><img src="images/email.png" alt="">
+                </a></li>
+            </ul>
         </nav>
     </header>
     <section class="headline-section">
-            <h1>Hey There.<br>I'm Tumaini.</h1>
+            <div id="information">
+                <h1>Hey There.<br>I'm Tumaini.</h1>
             <h2>I'm a Software Developer</h2>
         <div id="paragraph">
             <p>
@@ -25,6 +34,7 @@
                 If you like what you see and have a project you need coded, don't hesitate to contact me.
             </p>
         </div>
+            </div>
         <div class="social-media">
             <ul>
                 <li><a href="#"><img src="images/github.png" alt="github"></a></li>
@@ -33,13 +43,19 @@
                 <li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
                 <li><a href="#"><img src="images/medium.png" alt="medium icon"></a></li>
             </ul>
-        </div>        
+        </div> 
+        <img src="images/Illustration-header.png" alt="">       
     </section>
     <section class="works">
-        <h2 class="card-1">My Recent works</h2>
+        <div class="card-1">
+            <h2 >My Recent works</h2>
+            <img src="images/line.png" alt="line">
+        </div>
         <div class="card-2">
-            <img src="images/gym-image.png" alt="Placeholder">
-            <h3 id="story">Multi-Post Stories</h3>
+            <img id="gym-1" src="images/gym-image.png" alt="Placeholder">
+            <img id="gym-2" src="images/gym 2.png" alt="Placeholder">
+            <div id="description">
+                <h3 id="story">Multi-Post Stories</h3>
             <p>
                 A daily selection of privately personalized reads;
                 no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s,
@@ -51,7 +67,8 @@
                 <li><a href="#">Bootstrap</a></li>
                 <li><a href="#">RUBY</a></li>
             </ul>
-            <a class="see-project button-1" href="#">See project</a>
+            <a class="see-project button-1" href="https://github.com/tumainimaganiko/Portfolio">See project</a>
+            </div>    
         </div>
         <div class="card-3">
             <h2>Profesional Art Printing Data</h2>
@@ -64,7 +81,7 @@
                 <li><a href="#">Bootstrap</a></li>
                 <li><a href="#">RUBY</a></li>
             </ul>
-            <a class="see-project" href="#">See project</a>
+            <a class="see-project none" href="#">See project</a>
         </div>
         <div class="card-3">
             <h2>Profesional Art Printing Data</h2>
@@ -77,7 +94,7 @@
                 <li><a href="#">Bootstrap</a></li>
                 <li><a href="#">RUBY</a></li>
             </ul>
-            <a class="see-project" href="#">See project</a>
+            <a class="see-project none" href="#">See project</a>
         </div>
         <div class="card-3">
             <h2>Profesional Art Printing Data</h2>
@@ -90,7 +107,7 @@
                 <li><a href="#">Bootstrap</a></li>
                 <li><a href="#">RUBY</a></li>
             </ul>
-            <a class="see-project" href="#">See project</a>
+            <a class="see-project none" href="#">See project</a>
         </div>
         <div class="card-3">
             <h2>Profesional Art Printing Data</h2>
@@ -103,7 +120,7 @@
                 <li><a href="#">Bootstrap</a></li>
                 <li><a href="#">RUBY</a></li>
             </ul>
-            <a class="see-project" href="#">See project</a>
+            <a class="see-project none" href="#">See project</a>
         </div>
         <div class="card-3">
             <h2>Profesional Art Printing Data</h2>
@@ -116,7 +133,7 @@
                 <li><a href="#">Bootstrap</a></li>
                 <li><a href="#">RUBY</a></li>
             </ul>
-            <a class="see-project" href="#">See project</a>
+            <a class="see-project none" href="#">See project</a>
         </div>
         <div class="card-3 last">
             <h2>Profesional Art Printing Data</h2>
@@ -129,22 +146,24 @@
                 <li><a href="#">Bootstrap</a></li>
                 <li><a href="#">RUBY</a></li>
             </ul>
-            <a class="see-project" href="#">See project</a>
+            <a class="see-project none" href="#">See project</a>
         </div>
     </section>
     <section class="about-myself">
-        <h2>About me</h2>
-        <p>
-            Hello I'm a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience!
-            If you like what you see and have a project you need coded, don't hesitate to contact me.
-        </p>
-        <a class="see-project button-1" href="#">Get my resume</a>
-        <img src="images/Frame.png" alt="frame image">
-        <hr>
+        <div id="about-info">
+            <h2>About me</h2>
+            <p>
+                Hello I'm a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded, don't hesitate to contact me.
+            </p>
+            <a class="see-project button-1" href="#">Get my resume</a>    
+        </div>
+       <img id="frame" src="images/Frame.png" alt="frame image">
+        <hr id="line-1">
+        <hr id="line-2">
         <div class="categories">
-            <ul class="outer-list">
-                <li>
+                <div class="outer-list">
                     <div class="footer-heading font">
                         <img src="images/rotated-rectangle.png" alt="Rotated rectangle">
                         <span class="font">Language</span>
@@ -155,33 +174,32 @@
                         <li>HTML</li>
                         <li>CSS</li>
                     </ul>
-                </li>
-                <li>
-                    <div class="footer-heading font">
-                        <img src="images/Rectangle.png" alt="Rectangle">
-                        <span class="font">Frameworks</span>
+                </div>
+                <div class="outer-list">
+                <div class="footer-heading font">
+                    <img src="images/Rectangle.png" alt="Rectangle">
+                    <span class="font">Frameworks</span>
+                </div>
+                <ul class="inner-list">
+                    <li>React.js</li>
+                    <li>Ruby on Rails</li>
+                    <li>RSpec</li>
+                    <li>Capybara</li>
+                </ul>
+            </div>
+                    <div class="outer-list">
+                        <div class="footer-heading font">
+                            <img src="images/circle.png" alt="circle">
+                            <span class="font">Skills</span>
+                        </div>
+                        <ul class="inner-list">
+                            <li>Database Management</li>
+                            <li>Version Control</li>
+                            <li>CLI</li>
+                            <li>API Design</li>
+                            <li>Web development</li>
+                        </ul>
                     </div>
-                    <ul class="inner-list">
-                        <li>React.js</li>
-                        <li>Ruby on Rails</li>
-                        <li>RSpec</li>
-                        <li>Capybara</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="footer-heading font">
-                        <img src="images/circle.png" alt="circle">
-                        <span class="font">Skills</span>
-                    </div>
-                    <ul class="inner-list">
-                        <li>Database Management</li>
-                        <li>Version Control</li>
-                        <li>CLI</li>
-                        <li>API Design</li>
-                        <li>Web development</li>
-                    </ul>
-                </li>
-            </ul>
         </div>
     </section>
     <section class="contact-form">

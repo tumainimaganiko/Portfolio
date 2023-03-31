@@ -33,6 +33,20 @@
   margin-bottom: 19px;
 }
 
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  list-style-type: none;
+  margin-top: 25px;
+  padding-left: 0;
+}
+
+.menu-bar ul {
+  display: none;
+}
+
 .headline-section {
   display: flex;
   order: 0;
@@ -74,16 +88,6 @@
   justify-content: flex-start;
 }
 
-footer ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 15px;
-  list-style-type: none;
-  margin-top: 25px;
-  padding-left: 0;
-}
-
 .social-media ul {
   list-style-type: none;
 }
@@ -94,10 +98,7 @@ footer ul {
 }
 
 .headline-section > img {
-  position: absolute;
-  left: 20%;
-  top: 50%;
-  bottom: -12.46%;
+  display: none;
 }
 
 .works {
@@ -108,16 +109,23 @@ footer ul {
 .card-1 {
   display: flex;
   align-items: center;
-  font-family: 'Crete Round', serif;
   margin: 120px 24px 104px 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #212121;
+  width: 327px;
+  height: 83px;
+}
+
+.card-1 h2 {
   font-size: 40px;
   line-height: 52px;
   font-style: normal;
   font-weight: 400;
-  width: 327px;
-  height: 83px;
+  font-family: 'Crete Round', serif;
+}
+
+.card-1 img {
+  display: none;
 }
 
 .card-2 {
@@ -129,6 +137,10 @@ footer ul {
 
 .card-2 img {
   margin: 0 24px;
+}
+
+#gym-2 {
+  display: none;
 }
 
 #story {
@@ -173,6 +185,10 @@ footer ul {
   display: block;
 }
 
+.card-2 ul {
+  padding: 0 19px;
+}
+
 .see-project {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
@@ -187,6 +203,14 @@ footer ul {
 }
 
 .button-1 {
+  display: inline-block;
+  padding: 12px;
+  margin-left: 24px;
+  align-self: flex-start;
+  margin-top: 24px;
+}
+
+.button-2 {
   display: block;
   padding: 12px;
   margin-left: 24px;
@@ -307,9 +331,13 @@ footer ul {
   top: -60px;
 }
 
-.about-myself hr {
+#line-1 {
   border-bottom: 1px solid #fff;
   margin: -45px 24px 0;
+}
+
+#line-2 {
+  display: none;
 }
 
 .font {
@@ -341,7 +369,6 @@ footer ul {
 }
 
 .outer-list {
-  list-style-type: none;
   margin: 0 24px;
   padding-left: 0;
 }
@@ -449,4 +476,256 @@ footer ul {
 #submit:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
+}
+
+@media only screen and (min-width: 768px) {
+  #my-logo {
+    padding-left: 10%;
+  }
+
+  .menu-bar {
+    margin-right: 13%;
+  }
+
+  .menu-bar > img {
+    display: none;
+  }
+
+  .menu-bar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    gap: 10px;
+  }
+
+  .menu-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .headline-section {
+    background-image: none;
+    background-position: right top;
+    flex-direction: row-reverse;
+    background-size: 50%;
+  }
+
+  .headline-section > img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 80%;
+  }
+
+  #paragraph {
+    width: 50%;
+  }
+
+  .social-media ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .works {
+    grid-template-columns: 31.83% 31.83% 31.83%;
+    margin-bottom: 6%;
+    margin-left: 6%;
+    margin-right: 6%;
+    grid-gap: 15px;
+    grid-template-rows: 200px auto;
+  }
+
+  .card-1 {
+    grid-column: 1 / span 3;
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    grid-row: auto;
+    margin-top: 60px;
+  }
+
+  .card-1 h2 {
+    text-align: left;
+    display: inline;
+    padding-left: 3%;
+  }
+
+  .card-1 img {
+    display: block;
+    padding-left: 24px;
+    width: 60%;
+  }
+
+  .card-2 {
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #gym-1 {
+    display: none;
+  }
+
+  #description {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #story {
+    margin-top: 0;
+  }
+
+  #gym-2 {
+    display: block;
+    width: 50%;
+    height: 90%;
+    margin-right: 0;
+  }
+
+  .card-2 ul {
+    margin-left: 11px;
+  }
+
+  .button-1:visited {
+    background-color: #ff6b00;
+  }
+
+  .button-1:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    border: 1px solid #f55800;
+  }
+
+  .button-1:active {
+    background-color: #e05304;
+    color: #fff;
+  }
+
+  .button-1:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
+
+  .card-3 {
+    margin: 12px;
+    align-items: center;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .card-3:hover {
+    background-image: url('images/Mask\ Group.png');
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .card-3:hover .none {
+    display: block;
+    width: 100%;
+  }
+
+  .contact-form h2 {
+    min-width: 30%;
+    margin-left: 7%;
+  }
+
+  .card-3:hover h2 {
+    display: none;
+  }
+
+  .card-3:hover p {
+    display: none;
+  }
+
+  .card-3:hover ul {
+    display: none;
+  }
+
+  .last {
+    margin-bottom: 12px;
+  }
+
+  #about-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 7%;
+  }
+
+  .about-myself {
+    background-image: url('images/last\ image.png');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: right 10%;
+  }
+
+  #line-1 {
+    display: none;
+  }
+
+  #line-2 {
+    display: block;
+    color: #fff;
+    margin: 8% 8% 0%;
+  }
+
+  #frame {
+    display: none;
+  }
+
+  .categories {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-bottom: 8%;
+  }
+
+  .inner-list li {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .contact-form {
+    flex-direction: row;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .input-font {
+    width: 600px;
+  }
+
+  form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 6%;
+  }
+
+  .container {
+    justify-content: flex-start;
+  }
+
+  #sms {
+    width: 600px;
+  }
+
+  #submit {
+    margin-left: 0;
+  }
 }
