@@ -474,10 +474,6 @@ footer ul {
   color: #5b5957;
 }
 
-#illustration {
-    display: none;
-}
-
  @media only screen and (min-width:768px) {
   #my-logo {
     padding-left: 10%;
@@ -578,6 +574,26 @@ footer ul {
     margin-right: 0px;
   }
 
+  .button-1:visited {
+  background-color: #ff6b00;
+  }
+
+  .button-1:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    border: 1px solid #f55800;
+  }
+
+  .button-1:active {
+    background-color: #e05304;
+    color: #fff;
+  }
+
+  .button-1:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  }
+
   .card-3 {
     margin: 12px;
     align-items: center;
@@ -586,6 +602,27 @@ footer ul {
   .none {
     display: none;
   }
+
+  .card-3:hover {
+    background-image: url('images/Mask\ Group.png');
+    display: flex;
+    justify-content: flex-end;
+  }
+  .card-3:hover  .none {
+    display: block;
+    width: 100%;
+  }
+   .card-3:hover h2 {
+    display: none;
+   }
+
+   .card-3:hover p {
+    display: none;
+   }
+
+   .card-3:hover ul {
+    display: none;
+   }
 
   .last {
     margin-bottom: 12px;
@@ -611,7 +648,7 @@ footer ul {
   #line-2 {
     display: block;
     color: #fff;
-    margin-top: 2%;
+    margin-top: 10%;
     margin-bottom: 1%;
   }
 
@@ -625,9 +662,6 @@ footer ul {
     padding-top: 50px;
   }
 
-  .outer-list {
-    
-  }
   .inner-list li {
     margin-bottom: 0;
     padding-left: 0px;
@@ -635,9 +669,29 @@ footer ul {
 
   .contact-form {
     flex-direction: row;
+    border-bottom: 1px solid #DFE1E6;
+  }
+
+  .contact-form h2 {
+    min-width: 30%;
+  }
+
+  .input-font {
+    width: 600px;
   }
 
   form {
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
   }
+
+  .container {
+    justify-content: flex-start;
+  }
+
+  #sms {
+    width:600px
+  }
+  
 }
