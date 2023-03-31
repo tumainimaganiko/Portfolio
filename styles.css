@@ -600,6 +600,12 @@ footer ul {
     margin-left: 11px;
   }
 
+  .button-1 {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+
   .button-1:visited {
     background-color: #ff6b00;
   }
@@ -608,6 +614,7 @@ footer ul {
     background-color: #fff5e1;
     color: #f55800;
     border: 1px solid #f55800;
+    transform: translate(5px, 5px);
   }
 
   .button-1:active {
@@ -729,15 +736,5 @@ footer ul {
 
   #submit {
     margin-left: 0;
-  }
-
-  .button-1 {
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-  }
-
-  .button-1:hover {
-    transform: translate(5px, 5px);
   }
 }
