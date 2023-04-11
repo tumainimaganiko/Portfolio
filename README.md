@@ -42,6 +42,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 1. HTML
 2. CSS
+3. JAVASCRIPT
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -50,6 +51,7 @@
   <ul>
     <li><a href="/index.html">HTML</a></li>
     <li><a href="/styles.css">CSS</a></li>
+    <li><a href="/index.js">JAVASCRIPT</a></li>
   </ul>
 </details>
 
@@ -62,6 +64,7 @@
 
 - Added index.html file
 - Added styles.css
+- Added index.js file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,7 +155,6 @@ Coming soon
 
 - [ ] Add Works section
 - [ ] Add About myself section
-- [ ] Add Javascript
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
