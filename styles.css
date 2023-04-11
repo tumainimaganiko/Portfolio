@@ -21,15 +21,17 @@
 }
 
 #option {
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   display: none;
   height: 753px;
 }
+
 #x-mark {
   top: 25px;
   position: absolute;
   right: 25px;
 }
+
 #menu-list {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -39,15 +41,6 @@
   list-style-type: none;
   padding: 50px 25px;
 }
-#menu-list li {
-  border-bottom: 1px solid #6F6C6B;
-  margin: 20px;
-}
-#menu-list a {
-  color: #FFF5E1;
-  text-decoration: none;
-}
-
 
 .social-media a {
   background-color: transparent;
@@ -294,6 +287,11 @@ footer ul {
   margin-top: 15px;
 }
 
+#menu-list li {
+  border-bottom: 1px solid #6f6c6b;
+  margin: 20px;
+}
+
 .last {
   margin-bottom: 120px;
 }
@@ -352,6 +350,11 @@ footer ul {
 #my-logo > a {
   text-decoration: none;
   color: #fff;
+}
+
+#menu-list a {
+  color: #fff5e1;
+  text-decoration: none;
 }
 
 .about-myself > img {
