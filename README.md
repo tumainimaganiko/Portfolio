@@ -72,7 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Coming Soon
+- [Live Demo Link](https://tumainimaganiko.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,6 +141,8 @@ Coming soon
 - GitHub: [@githubhandle](https://github.com/tumainimaganiko)
 - Twitter: [@twitterhandle](https://twitter.com/Chief2maini)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/tumaini-maganiko-991b30262/)
+
+-Summarized video of my project: [loom](https://www.loom.com/share/1ea2df078c4940e39b408606dbbd1cbf)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
