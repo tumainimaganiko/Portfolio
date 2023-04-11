@@ -1,29 +1,29 @@
-let div = document.createElement("div");
-div.id = 'menu-container';
+let btnMenu = document.getElementById('hamburger');
+let xBtn = document.getElementById("x-mark");
 
-let ul = document.createElement('ul');
-ul.id = 'outer-list';
-let li = document.createElement('li');
-let text = document.createTextNode("Portfolio");
-li.appendChild(text);
-ul.appendChild(li);
-
-let li2 = document.createElement('li');
-let text2 = document.createTextNode("Contact");
-li2.appendChild(text2);
-ul.appendChild(li2);
-
-let li3 = document.createElement('li');
-let text3 = document.createTextNode("About");
-li3.appendChild(text3);
-ul.appendChild(li3);
-
-div.appendChild(ul);
+btnMenu.addEventListener('click',myFunction);
 
 function myFunction(){
-    const element = document.getElementById("my-logo");
-    element.appendChild(div);
+    let element = document.querySelector(".toolbar");   
+    let list = document.getElementById('option');
+    element.style.display = "none";
+    list.style.display = "block";
 }
 
-let btnMenu = document.querySelector('header');
-btnMenu.addEventListener('click',myFunction);
+xBtn.addEventListener('click', closing);
+
+function closing(){
+    let element = document.querySelector(".toolbar");   
+    let list = document.getElementById('option');
+    element.style.display = "flex";
+    list.style.display = "none";
+}
+
+let btn1 = document.getElementById('about-link');
+let btn2 = document.getElementById('contact-link');
+let btn3 = document.getElementById('port');
+
+
+btn1.addEventListener('click', closing);
+btn2.addEventListener('click',closing);
+btn3.addEventListener('click',closing);
