@@ -20,6 +20,35 @@
   font-weight: 700;
 }
 
+#option {
+  background-color: #3C3A39;
+  display: none;
+  height: 753px;
+}
+#x-mark {
+  top: 25px;
+  position: absolute;
+  right: 25px;
+}
+#menu-list {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  list-style-type: none;
+  padding: 50px 25px;
+}
+#menu-list li {
+  border-bottom: 1px solid #6F6C6B;
+  margin: 20px;
+}
+#menu-list a {
+  color: #FFF5E1;
+  text-decoration: none;
+}
+
+
 .social-media a {
   background-color: transparent;
   border: none;
