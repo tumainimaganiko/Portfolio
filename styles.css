@@ -522,6 +522,67 @@ footer ul {
   align-self: flex-end;
 }
 
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: .8;
+  backdrop-filter: blur(5px);
+  pointer-events: all;
+  display: none;
+}
+.modal {
+  border: 1px solid black;
+  z-index: 1000;
+  background-color: white;
+  width: 330px;
+  /* position: absolute; */
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 200ms ease-in-out;
+  display: none;
+}
+.modal > ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0.5rem;
+}
+.modal > ul li {
+  padding: 12px;
+  margin: 6px;
+  border: 1px solid black;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+.modal > ul a{
+  text-decoration: none;
+  color: #3C3A39;
+}
+#long-p {
+  display: none;
+}
+.modal-body ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0.5rem;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 30px;
+}
+
+
 @media only screen and (min-width: 768px) {
   #my-logo {
     padding-left: 10%;
@@ -782,3 +843,5 @@ footer ul {
     margin-left: 0;
   }
 }
+
+
