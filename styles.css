@@ -582,6 +582,50 @@ footer ul {
   margin-bottom: 30px;
 }
 
+.h2-color {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+  margin-left: 12px;
+}
+
+.modal-body > img {
+  width: 80%;
+  padding: 5%;
+}
+
+.modal-body p {
+  padding: 0 12px;
+  text-align: justify;
+  color: #344563;
+}
+
+.modal-body a {
+  text-decoration: none;
+  color: #fff
+}
+
+.bottom-btn li {
+  background-color: #f55800;
+  display: flex;
+  padding: 12px;
+  margin: 6px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.close-button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+}
 
 @media only screen and (min-width: 768px) {
   #my-logo {
