@@ -26,3 +26,6 @@ const btn3 = document.getElementById('port');
 btn1.addEventListener('click', closing);
 btn2.addEventListener('click', closing);
 btn3.addEventListener('click', closing);
+
+const name = document.getElementById('email');
+const user = document.getElementById('valid');
