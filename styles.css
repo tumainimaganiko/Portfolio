@@ -249,7 +249,7 @@ footer ul {
   margin: 12px 24px;
 }
 
-.card-3 h2 {
+.card-3 > h2 {
   font-family: "Crete Round", serif;
   font-size: 32px;
   font-weight: 400;
@@ -259,7 +259,7 @@ footer ul {
   color: #fff;
 }
 
-.card-3 p {
+.card-3 > p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
