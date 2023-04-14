@@ -46,3 +46,96 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+const cards = [
+  {
+    heading: "My Recent Works",
+    imgLine: "images/line.png"
+  },
+  {
+    img1: "images/gym-image.png",
+    img2: "images/gym 2.png",
+    heading: "Multi-post Stories",
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s when an unknown printer took a standard dummy text.",
+    link: "https://github.com/tumainimaganiko/Portfolio",
+    imgCard: "images/10 image.png",
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: ""
+  },
+  {
+    heading: "Profesional Art Printing Data",
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: "",
+    technologies: ['HTML','Bootstrap','Ruby on Rails'],
+    imgCard: "images/10 image.png",
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: ""
+  },
+  {
+    heading:"Website Portfolio",
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: "",
+    technologies: ['HTML','Bootstrap','Ruby on Rails'],
+    imgCard: "images/10 image.png",
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: ""
+  },
+  {
+    heading: "Profesional Art Printing Data",
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: "",
+    technologies: ['HTML','Bootstrap','Ruby on Rails'],
+    imgCard: "images/10 image.png",
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: ""
+  },
+  {
+    heading:"Profesional Art Printing Data",
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: "",
+    technologies: ['HTML','Bootstrap','Ruby on Rails'],
+    imgCard: "images/10 image.png",
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: ""
+  },
+  {
+    heading: "Data Dashboard Healthcare",
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: "",
+    technologies: ['HTML','Bootstrap','Ruby on Rails'],
+    imgCard: "images/10 image.png",
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: ""
+  },
+  {
+    heading:"Website Portfolio",
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry's standard.",
+    liveLink: "",
+    technologies: ['HTML','Bootstrap','Ruby on Rails'],
+    imgCard: "images/10 image.png",
+    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essent
+                    `,
+    sourceLink: ""
+  },
+]
+
