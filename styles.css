@@ -287,18 +287,11 @@ footer ul {
   width: 100px;
   justify-content: space-between;
 }
-.bottom-btn li img {
-  position: absolute;
-}
-
-.bottom-btn li span {
-  padding-right: 10px;
-}
 
 #first-list {
   margin-left: 1px;
   width: 80px;
-} 
+}
 
 .card-3 ul li {
   background-color: rgba(255, 255, 255, 0.24);
@@ -613,6 +606,14 @@ footer ul {
   color: #344563;
 }
 
+.bottom-btn li img {
+  position: absolute;
+}
+
+.bottom-btn li span {
+  padding-right: 10px;
+}
+
 .close-button {
   border: none;
   cursor: pointer;
@@ -830,8 +831,16 @@ footer ul {
     display: none;
   }
 
+  .modal-body > div p {
+    margin-bottom: 20px;
+  }
+
   .card-3:hover p {
     display: none;
+  }
+
+  .modal > ul {
+    padding-left: 1.25rem;
   }
 
   .card-3:hover ul {
@@ -921,17 +930,9 @@ footer ul {
   }
 
   .modal-header {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 0;
     margin-top: 25px;
-  }
-
-  .modal-body > div {
-    padding: 2%;
-  }
-
-  .modal-body > div p {
-    margin-bottom: 20px;
   }
 
   .close-button {
@@ -949,10 +950,7 @@ footer ul {
     flex-direction: column;
     height: 60%;
     margin-right: 2%;
-  }
-
-  .modal > ul {
-    padding-left: 1.25rem;
+    padding: 2%;
   }
 
   .bottom-btn {
@@ -961,8 +959,6 @@ footer ul {
   }
 
   .h2-color {
-  margin-left: 25px;
+    margin-left: 25px;
   }
-
-
 }
