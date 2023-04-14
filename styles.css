@@ -33,16 +33,6 @@
   color: #67798e;
 }
 
-#menu-list {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  list-style-type: none;
-  padding: 50px 25px;
-}
-
 .social-media a {
   background-color: transparent;
   border: none;
@@ -278,6 +268,18 @@ footer ul {
   margin-bottom: 32px;
 }
 
+.bottom-btn li {
+  background-color: #f55800;
+  display: flex;
+  padding: 12px;
+  margin: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
 .card-3 ul li {
   background-color: rgba(255, 255, 255, 0.24);
   border: none;
@@ -286,6 +288,27 @@ footer ul {
 .card-3 > a {
   padding: 12px;
   margin-top: 15px;
+}
+
+.modal > ul li {
+  padding: 12px;
+  margin: 6px;
+  border: 1px solid black;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+#menu-list {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  list-style-type: none;
+  padding: 50px 25px;
 }
 
 #menu-list li {
@@ -327,35 +350,6 @@ footer ul {
 
 .about-myself > a {
   margin-top: 24px;
-}
-
-.btn li a:link {
-  background-color: #f55800;
-  color: #fff;
-}
-
-.btn li a:visited {
-  background-color: #ff6b00;
-}
-
-.btn li a:hover {
-  background-color: #fff5e1;
-  color: #e05304;
-}
-
-.btn li a:active {
-  background-color: #e05304;
-  color: #fff;
-}
-
-#my-logo > a {
-  text-decoration: none;
-  color: #fff;
-}
-
-#menu-list a {
-  color: #fff5e1;
-  text-decoration: none;
 }
 
 .about-myself > img {
@@ -529,16 +523,18 @@ footer ul {
   top: 0;
   bottom: 0;
   background-color: black;
-  opacity: .8;
+  opacity: 0.8;
   backdrop-filter: blur(5px);
   pointer-events: all;
   display: none;
 }
+
 .modal {
   border: 1px solid black;
   z-index: 1000;
   background-color: white;
   width: 330px;
+
   /* position: absolute; */
   position: fixed;
   left: 50%;
@@ -547,33 +543,29 @@ footer ul {
   transition: 200ms ease-in-out;
   display: none;
 }
+
+.modal-body a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .modal > ul {
   list-style-type: none;
   display: flex;
   padding-left: 0.5rem;
 }
-.modal > ul li {
-  padding: 12px;
-  margin: 6px;
-  border: 1px solid black;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-}
-.modal > ul a{
+
+.modal > ul a {
   text-decoration: none;
-  color: #3C3A39;
+  color: #3c3a39;
 }
-#long-p {
-  display: none;
-}
+
 .modal-body ul {
   list-style-type: none;
   display: flex;
   padding-left: 0.5rem;
 }
+
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -587,7 +579,7 @@ footer ul {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   margin-left: 12px;
 }
 
@@ -602,29 +594,41 @@ footer ul {
   color: #344563;
 }
 
-.modal-body a {
-  text-decoration: none;
-  color: #fff
-}
-
-.bottom-btn li {
-  background-color: #f55800;
-  display: flex;
-  padding: 12px;
-  margin: 6px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-}
-
 .close-button {
   border: none;
   cursor: pointer;
   outline: none;
   background: none;
   font-size: 2rem;
+}
+
+.btn li a:link {
+  background-color: #f55800;
+  color: #fff;
+}
+
+.btn li a:visited {
+  background-color: #ff6b00;
+}
+
+.btn li a:hover {
+  background-color: #fff5e1;
+  color: #e05304;
+}
+
+.btn li a:active {
+  background-color: #e05304;
+  color: #fff;
+}
+
+#my-logo > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu-list a {
+  color: #fff5e1;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -887,26 +891,31 @@ footer ul {
     margin-left: 0;
   }
 
-  .modal{
+  .modal {
     width: 70%;
   }
+
   .modal-body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70%;
   }
+
   .modal-header {
     margin-bottom: 0;
   }
+
   .close-button {
     margin: 25px;
   }
+
   .modal-body > img {
     width: 50%;
     height: 60%;
     padding: 2%;
   }
+
   .modal-body > div {
     display: flex;
     flex-direction: column;
@@ -914,5 +923,3 @@ footer ul {
     margin-right: 2%;
   }
 }
-
-
