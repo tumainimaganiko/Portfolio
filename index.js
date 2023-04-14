@@ -226,3 +226,16 @@ btnClick.forEach((btn)=>{
     works.append(modal)
   })
 })
+
+document.addEventListener('click', (e) => {
+  const modal = document.querySelector('.modal');
+  const target = e.target.closest('.close-button');
+  let overlay = document.querySelector('#overlay');
+  if (target) {
+    modal.remove();
+    overlay.style.display = 'none';
+    // overlay.classList.add('hidden');
+  }
+});
+let x = document.querySelector('.modal');
+let overlay = document.getElementById('overlay');
