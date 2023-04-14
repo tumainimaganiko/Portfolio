@@ -886,6 +886,33 @@ footer ul {
   #submit-button {
     margin-left: 0;
   }
+
+  .modal{
+    width: 70%;
+  }
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+  }
+  .modal-header {
+    margin-bottom: 0;
+  }
+  .close-button {
+    margin: 25px;
+  }
+  .modal-body > img {
+    width: 50%;
+    height: 60%;
+    padding: 2%;
+  }
+  .modal-body > div {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    margin-right: 2%;
+  }
 }
 
 
