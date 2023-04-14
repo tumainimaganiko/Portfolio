@@ -139,3 +139,49 @@ const cards = [
   },
 ]
 
+let works = document.querySelector(".works");
+cards.forEach(inputFunction);
+function inputFunction(value, index){
+  let div = document.createElement('div');
+  div.id = index;
+  if(index === 0){
+    div.className = 'card-1';
+    div.innerHTML = `
+    <h2 >${value.heading}</h2>
+    <img src="${value.imgLine}" alt="line">
+    `
+  }else if(index === 1 ){
+    div.className = 'card-2';
+    div.id = index;
+    div.innerHTML = `
+    <img id="gym-1" src="${value.img1}" alt="Placeholder">
+    <img id="gym-2" src="${value.img2}" alt="Placeholder">
+    <div id="1">
+        <h3 id="story">${value.heading}</h3>
+    <p>${value.description}</p>
+    <ul class="link-1 btn">
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+        <li><a href="#">RUBY</a></li>
+    </ul>
+    <a class="see-project btn-click button-1" href="">See project</a>
+    </div>
+    `
+  } else{
+    div.className = 'card-3';
+    div.id = index;
+    div.innerHTML = `
+  <h2>${value.heading}</h2>
+  <p>${value.description}</p>
+  <ul class="link-1">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">RUBY</a></li>
+  </ul>
+  <a  class="see-project none btn-click" href="">See project</a>
+  `
+  }
+  works.appendChild(div);
+}
+
