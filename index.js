@@ -26,3 +26,23 @@ const btn3 = document.getElementById('port');
 btn1.addEventListener('click', closing);
 btn2.addEventListener('click', closing);
 btn3.addEventListener('click', closing);
+
+const form = document.querySelector('#valid');
+const emailInput = document.querySelector('#email');
+const errorMessage = document.querySelector('#error-message');
+
+function showError(message) {
+  errorMessage.innerText = message;
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailValue = emailInput.value.trim();
+
+  if (emailValue !== emailValue.toLowerCase()) {
+    showError('Error: Email must be lowercase. Form is not sent.');
+  } else {
+    showError('');
+    form.submit();
+  }
+});
