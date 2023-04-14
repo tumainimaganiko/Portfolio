@@ -185,3 +185,44 @@ function inputFunction(value, index){
   works.appendChild(div);
 }
 
+const btnClick = document.querySelectorAll('.btn-click');
+
+
+btnClick.forEach((btn)=>{
+  btn.addEventListener('click',(e)=>{
+    e.preventDefault();
+    console.log(btn.parentNode.id)
+    let x =btn.parentNode.id
+  // let x = document.querySelector('.modal');
+  let overlay = document.querySelector('#overlay');
+  overlay.style.display = 'block';
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.id = 'modal';
+   modal.style.display = 'block';
+    modal.innerHTML = `
+    <div class="modal-header">
+    <h2 class="h2-color">${cards[x].heading}</h2>
+    <button class="close-button">&times;</button>
+</div>
+<ul>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">Bootstrap</a></li>
+    <li><a href="#">Ruby on Rails</a></li>
+</ul>
+<div class="modal-body">
+   
+    <img src="${cards[x].imgCard}" alt="">
+    <div>
+        <p>${cards[x].details}</p>
+        <ul class="bottom-btn">
+            <li><a href="#${cards[x].liveLink}">See live <img src="images/watch.png" alt=""></a></li>
+            <li><a href="#${cards[x].sourceLink}">See source <img src="images/github.png" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+    `
+    works.append(modal)
+  })
+})
