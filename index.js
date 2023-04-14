@@ -27,12 +27,11 @@ btn1.addEventListener('click', closing);
 btn2.addEventListener('click', closing);
 btn3.addEventListener('click', closing);
 
-const name = document.getElementById('email');
 const user = document.getElementById('valid');
-const x = document.getElementById('email')
+const x = document.getElementById('email');
 
-user.addEventListener("submit", (event) => {
-  event.preventDefault()
+user.addEventListener('submit', (event) => {
+  event.preventDefault();
   if (x.value !== x.value.toLowerCase()) {
     document.getElementById('error-message').innerText = 'Error, Email must be lowercase. Form is not sent';
   } else {
@@ -40,13 +39,3 @@ user.addEventListener("submit", (event) => {
     user.submit();
   }
 });
-
-// form.addEventListener("submit", (event) => {
-//   event.preventDefault()
-//   if (email.value !== email.value.toLowerCase()) {
-//     document.getElementById('error').innerText = 'Error, Email must be lowercase. Form is not sent';
-//   } else {
-//     document.getElementById('error').innerText = '';
-//     form.submit();
-//   }
-// });
