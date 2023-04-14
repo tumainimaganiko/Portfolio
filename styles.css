@@ -475,7 +475,7 @@ footer ul {
   text-align: left;
 }
 
-#submit {
+#submit-button {
   font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -489,26 +489,37 @@ footer ul {
   color: #fff;
   border: none;
   margin-bottom: 78px;
+  flex-grow: 0;
 }
 
-#submit:visited {
+#submit-button:visited {
   background-color: #ff6b00;
 }
 
-#submit:hover {
+#submit-button:hover {
   background-color: #fff5e1;
   color: #f55800;
   border: 1px solid #f55800;
 }
 
-#submit:active {
+#submit-button:active {
   background-color: #e05304;
   color: #fff;
 }
 
-#submit:disabled {
+#submit-button:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
+}
+
+#container2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#error-message {
+  border: none;
+  align-self: flex-end;
 }
 
 @media only screen and (min-width: 768px) {
@@ -767,7 +778,7 @@ footer ul {
     width: 600px;
   }
 
-  #submit {
+  #submit-button {
     margin-left: 0;
   }
 }
