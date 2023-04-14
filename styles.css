@@ -268,17 +268,37 @@ footer ul {
   margin-bottom: 32px;
 }
 
+.bottom-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
 .bottom-btn li {
   background-color: #f55800;
   display: flex;
   padding: 12px;
-  margin: 6px;
+  margin: 12px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
+  width: 100px;
+  justify-content: space-between;
 }
+.bottom-btn li img {
+  position: absolute;
+}
+
+.bottom-btn li span {
+  padding-right: 10px;
+}
+
+#first-list {
+  margin-left: 1px;
+  width: 80px;
+} 
 
 .card-3 ul li {
   background-color: rgba(255, 255, 255, 0.24);
@@ -580,11 +600,10 @@ footer ul {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  margin-left: 12px;
 }
 
 .modal-body > img {
-  width: 80%;
+  width: 90%;
   padding: 5%;
 }
 
@@ -898,16 +917,25 @@ footer ul {
   .modal-body {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 70%;
   }
 
   .modal-header {
-    margin-bottom: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    margin-top: 25px;
+  }
+
+  .modal-body > div {
+    padding: 2%;
+  }
+
+  .modal-body > div p {
+    margin-bottom: 20px;
   }
 
   .close-button {
-    margin: 25px;
+    margin-right: 25px;
   }
 
   .modal-body > img {
@@ -922,4 +950,19 @@ footer ul {
     height: 60%;
     margin-right: 2%;
   }
+
+  .modal > ul {
+    padding-left: 1.25rem;
+  }
+
+  .bottom-btn {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .h2-color {
+  margin-left: 25px;
+  }
+
+
 }

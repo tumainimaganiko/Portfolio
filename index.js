@@ -55,7 +55,7 @@ const cards = [
   {
     img1: 'images/gym-image.png',
     img2: 'images/gym 2.png',
-    heading: 'Multi-post Stories',
+    heading: 'Multi Post Stories',
     description: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s when an unknown printer took a standard dummy text.",
     link: 'https://github.com/tumainimaganiko/Portfolio',
     imgCard: 'images/10 image.png',
@@ -213,8 +213,8 @@ btnClick.forEach((btn) => {
     <div>
         <p>${cards[x].details}</p>
         <ul class="bottom-btn">
-            <li><a href="#${cards[x].liveLink}">See live <img src="images/watch.png" alt=""></a></li>
-            <li><a href="#${cards[x].sourceLink}">See source <img src="images/github.png" alt=""></a></li>
+            <li id="first-list"><a href="#${cards[x].liveLink}"><span>See live</span><img src="images/watch.png" alt=""></a></li>
+            <li><a href="#${cards[x].sourceLink}"><span>See Source</span><img src="images/github.png" alt=""></a></li>
         </ul>
     </div>
 </div>
