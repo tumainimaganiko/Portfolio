@@ -234,3 +234,16 @@ document.addEventListener('click', (e) => {
     // overlay.classList.add('hidden');
   }
 });
+
+// Data preservation
+const fullname = document.querySelector('#fullname');
+const message = document.querySelector('#sms');
+
+const saveLocal = () => {
+  const storeLocal = {
+    email: emailInput.value,
+    fullname: fullname.value,
+    message: message.value
+  }
+  localStorage.setItem('formdata',JSON.stringify(storeLocal))
+}
