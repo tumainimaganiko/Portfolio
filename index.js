@@ -247,3 +247,13 @@ const saveLocal = () => {
   }
   localStorage.setItem('formdata',JSON.stringify(storeLocal))
 }
+
+emailInput.addEventListener('input',saveLocal)
+fullname.addEventListener('input',saveLocal)
+message.addEventListener('input',saveLocal)
+const objLocal = JSON.parse(localStorage.getItem('formdata'))
+if(objLocal){
+  emailInput.value = objLocal.email
+  fullname.value = objLocal.fullname
+  message.value = objLocal.message
+}
