@@ -24,6 +24,9 @@
   background-color: #3c3a39;
   display: none;
   height: 753px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 #x-mark {
