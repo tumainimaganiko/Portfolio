@@ -815,7 +815,7 @@ footer ul {
 
   .card-3:hover {
     transform: scale(1.08);
-    background-image: url("images/Mask\ Group.png");
+    background-image: url("images/Mask Group.png");
     display: flex;
     justify-content: flex-end;
   }
@@ -862,7 +862,7 @@ footer ul {
   }
 
   .about-myself {
-    background-image: url("images/last\ image.png");
+    background-image: url("images/last image.png");
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: right 10%;
