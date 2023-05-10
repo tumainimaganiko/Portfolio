@@ -53,17 +53,18 @@ const cards = [
     imgLine: 'images/line.png',
   },
   {
-    img1: 'images/gym-image.png',
-    img2: 'images/gym 2.png',
-    heading: 'Multi Post Stories',
-    description: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s when an unknown printer took a standard dummy text.",
+    img1: 'images/todo_1.png',
+    img2: 'images/todo.png',
+    heading: 'TO DO LIST APP',
+    description: `A to-do list app is a productivity tool designed to help users to create and 
+                  maintain lists of tasks that they need to complete and it allows user to edit
+                  their tasks even after the task is saved. Built with CSS, HTML, and JAVASCRIPT. `,
     link: 'https://github.com/tumainimaganiko/Portfolio',
-    imgCard: 'images/10 image.png',
-    details: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                but also the leap into electronic typesetting, remaining essent
-                    `,
-    sourceLink: '',
+    imgCard: 'images/todo.png',
+    details: ` A to-do list app is a productivity tool designed to help users to create and 
+                maintain lists of tasks that they need to complete and it allows user to edit their tasks even after the task is saved. Built with CSS, HTML, and JAVASCRIPT. `,
+    sourceLink: 'https://github.com/tumainimaganiko/To-Do-Lists',
+    liveLink: 'https://tumainimaganiko.github.io/To-Do-Lists/dist/',
   },
   {
     heading: 'Profesional Art Printing Data',
@@ -213,8 +214,8 @@ btnClick.forEach((btn) => {
     <div>
         <p>${cards[x].details}</p>
         <ul class="bottom-btn">
-            <li id="first-list"><a href="#${cards[x].liveLink}"><span>See live</span><img src="images/watch.png" alt=""></a></li>
-            <li><a href="#${cards[x].sourceLink}"><span>See Source</span><img src="images/github.png" alt=""></a></li>
+            <li id="first-list"><a href="${cards[x].liveLink}" target="_blank"><span>See live</span><img src="images/watch.png" alt=""></a></li>
+            <li><a href="${cards[x].sourceLink}" target="_blank"><span>See Source</span><img src="images/github.png" alt=""></a></li>
         </ul>
     </div>
 </div>
