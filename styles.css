@@ -904,6 +904,7 @@ input {
     justify-content: space-around;
     padding-top: 50px;
     margin-bottom: 8%;
+    align-items: flex-start;
   }
 
   .inner-list li {
