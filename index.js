@@ -1,31 +1,31 @@
 const btnMenu = document.getElementById('hamburger');
 const xBtn = document.getElementById('x-mark');
 
-function myFunction() {
+function displayMenu() {
   const element = document.querySelector('.toolbar');
-  const list = document.getElementById('option');
+  const mobileMenu = document.getElementById('mobile-menu');
   element.style.display = 'none';
-  list.style.display = 'block';
+  mobileMenu.style.display = 'block';
 }
 
-function closing() {
+function closingMenu() {
   const element = document.querySelector('.toolbar');
-  const list = document.getElementById('option');
+  const list = document.getElementById('mobile-menu');
   element.style.display = 'flex';
   list.style.display = 'none';
 }
 
-btnMenu.addEventListener('click', myFunction);
+btnMenu.addEventListener('click', displayMenu);
 
-xBtn.addEventListener('click', closing);
+xBtn.addEventListener('click', closingMenu);
 
 const btn1 = document.getElementById('about-link');
 const btn2 = document.getElementById('contact-link');
 const btn3 = document.getElementById('port');
 
-btn1.addEventListener('click', closing);
-btn2.addEventListener('click', closing);
-btn3.addEventListener('click', closing);
+btn1.addEventListener('click', closingMenu);
+btn2.addEventListener('click', closingMenu);
+btn3.addEventListener('click', closingMenu);
 
 const form = document.querySelector('form');
 const emailInput = document.querySelector('#email');
@@ -167,11 +167,11 @@ function inputFunction(value, index) {
         <li><a class="letter-spacing" href="#">Bootstrap</a></li>
         <li><a class="letter-spacing" href="#">RUBY</a></li>
     </ul>
-    <a class="see-project btn-click button-1" href="">See project</a>
+    <a class="see-project-btn btn-click button-1" href="">See project</a>
     </div>
     `;
   } else {
-    div.className = 'card-3';
+    div.className = 'cards';
     div.id = index;
     div.innerHTML = `
   <h2 class="font-Crete">${value.heading}</h2>
@@ -181,7 +181,7 @@ function inputFunction(value, index) {
       <li><a href="#">Bootstrap</a></li>
       <li><a href="#">RUBY</a></li>
   </ul>
-  <a  class="see-project none btn-click" href="">See project</a>
+  <a  class="see-project-btn none btn-click" href="">See project</a>
   `;
   }
   works.appendChild(div);

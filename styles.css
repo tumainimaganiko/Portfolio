@@ -58,7 +58,7 @@ ul {
   font-weight: 700;
 }
 
-#option {
+#mobile-menu {
   background-color: #3c3a39;
   display: none;
   height: 753px;
@@ -156,7 +156,6 @@ footer ul {
   align-items: center;
   margin: 120px 24px 20px 24px;
   padding-bottom: 24px;
-  /* height: 83px; */
   flex-direction: column;
 }
 
@@ -220,7 +219,7 @@ footer ul {
   padding-left: 25px;
 }
 
-.see-project {
+.see-project-btn {
   text-decoration: none;
   font-family: "Inter", sans-serif;
   background-color: #ff6b00;
@@ -248,16 +247,15 @@ footer ul {
   align-self: flex-start;
 }
 
-.card-3 {
+.cards {
   display: flex;
   flex-direction: column;
-  background-image: url("images/profesional.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/card-bg-image.svg");
+  background-repeat: repeat-x;
   margin: 12px 24px;
 }
 
-.card-3 > h2 {
+.cards > h2 {
   font-size: 32px;
   line-height: 44px;
   
@@ -265,18 +263,17 @@ footer ul {
   color: #fff;
 }
 
-.card-3 > p {
+.cards > p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  
+  line-height: 24px;  
   text-align: left;
   color: #fff;
   margin: 12px 13px;
 }
 
-.card-3 a {
+.cards a {
   color: #fff;
 }
 
@@ -311,12 +308,12 @@ footer ul {
   width: 80px;
 }
 
-.card-3 ul li {
+.cards ul li {
   background-color: rgba(255, 255, 255, 0.24);
   border: none;
 }
 
-.card-3 > a {
+.cards > a {
   padding: 12px;
   margin-top: 15px;
 }
@@ -787,7 +784,7 @@ input {
     color: #5b5957;
   }
 
-  .card-3 {
+  .cards {
     margin: 12px;
     align-items: center;
     transition: all 0.4s ease-in-out;
@@ -797,14 +794,14 @@ input {
     display: none;
   }
 
-  .card-3:hover {
+  .cards:hover {
     transform: scale(1.08);
     background-image: url("images/Mask Group.png");
     display: flex;
     justify-content: flex-end;
   }
 
-  .card-3:hover .none {
+  .cards:hover .none {
     display: block;
     width: 100%;
   }
@@ -814,7 +811,7 @@ input {
     margin-left: 7%;
   }
 
-  .card-3:hover h2 {
+  .cards:hover h2 {
     display: none;
   }
 
@@ -822,7 +819,7 @@ input {
     margin-bottom: 20px;
   }
 
-  .card-3:hover p {
+  .cards:hover p {
     display: none;
   }
 
@@ -830,7 +827,7 @@ input {
     padding-left: 1.25rem;
   }
 
-  .card-3:hover ul {
+  .cards:hover ul {
     display: none;
   }
 
