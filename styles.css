@@ -143,7 +143,7 @@ footer ul {
   padding: 5px;
 }
 
-.headline-section > img {
+.headline-section > svg {
   display: none;
 }
 
@@ -527,8 +527,6 @@ input[type='submit']:disabled {
   z-index: 1000;
   background-color: white;
   width: 330px;
-
-  /* position: absolute; */
   position: fixed;
   left: 50%;
   top: 50%;
@@ -678,15 +676,27 @@ input {
   .headline-section {
     background-image: none;
     background-position: right top;
-    flex-direction: row-reverse;
+    flex-direction: row;
     background-size: 50%;
   }
 
-  .headline-section > img {
+  .headline-section h1 {
+    margin-top: 0;
+  }
+
+  #information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info-social {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .headline-section > svg {
     display: block;
-    position: absolute;
-    right: 0;
-    width: 50%;
     height: 80%;
   }
 
