@@ -50,7 +50,6 @@ form.addEventListener('submit', (event) => {
 const cards = [
   {
     heading: 'My Recent Works',
-    imgLine: 'images/line.png',
   },
   {
     img1: 'images/todo_1.png',
@@ -145,25 +144,24 @@ function inputFunction(value, index) {
   const div = document.createElement('div');
   div.id = index;
   if (index === 0) {
-    div.className = 'card-1';
+    div.classList.add('card-1','flex');
     div.innerHTML = `
-    <h2 >${value.heading}</h2>
-    <img src="${value.imgLine}" alt="line">
+    <h2 class="font-Crete" >${value.heading}</h2>
+    <hr>
     `;
   } else if (index === 1) {
     div.className = 'card-2';
     div.id = index;
     div.innerHTML = `
-    <img id="gym-1" src="${value.img1}" alt="Placeholder">
-    <img id="gym-2" src="${value.img2}" alt="Placeholder">
+    <img id="gym" src="${value.img2}" alt="Placeholder">
     <div id="1">
-        <h3 id="story">${value.heading}</h3>
-    <p>${value.description}</p>
-    <ul class="link-1 btn">
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">Bootstrap</a></li>
-        <li><a href="#">RUBY</a></li>
+        <h3 id="story" class="font-Crete">${value.heading}</h3>
+    <p class="font-Inter">${value.description}</p>
+    <ul class="link-1 btn flex">
+        <li><a class="letter-spacing" href="#">CSS</a></li>
+        <li><a class="letter-spacing" href="#">HTML</a></li>
+        <li><a class="letter-spacing" href="#">Bootstrap</a></li>
+        <li><a class="letter-spacing" href="#">RUBY</a></li>
     </ul>
     <a class="see-project btn-click button-1" href="">See project</a>
     </div>
@@ -172,9 +170,9 @@ function inputFunction(value, index) {
     div.className = 'card-3';
     div.id = index;
     div.innerHTML = `
-  <h2>${value.heading}</h2>
-  <p>${value.description}</p>
-  <ul class="link-1">
+  <h2 class="font-Crete">${value.heading}</h2>
+  <p class="letter-spacing">${value.description}</p>
+  <ul class="link-1 flex">
       <li><a href="#">HTML</a></li>
       <li><a href="#">Bootstrap</a></li>
       <li><a href="#">RUBY</a></li>
@@ -200,13 +198,13 @@ btnClick.forEach((btn) => {
     modal.style.display = 'block';
     modal.innerHTML = `
     <div class="modal-header">
-    <h2 class="h2-color">${cards[x].heading}</h2>
+    <h2 class="h2-color font-Roboto">${cards[x].heading}</h2>
     <button class="close-button">&times;</button>
 </div>
 <ul>
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">Bootstrap</a></li>
-    <li><a href="#">Ruby on Rails</a></li>
+    <li class="font-Poppins"><a href="#">HTML</a></li>
+    <li class="font-Poppins"><a href="#">Bootstrap</a></li>
+    <li class="font-Poppins"><a href="#">Ruby on Rails</a></li>
 </ul>
 <div class="modal-body">
    
@@ -214,8 +212,8 @@ btnClick.forEach((btn) => {
     <div>
         <p>${cards[x].details}</p>
         <ul class="bottom-btn">
-            <li id="first-list"><a href="${cards[x].liveLink}" target="_blank"><span>See live</span><img src="images/watch.png" alt=""></a></li>
-            <li><a href="${cards[x].sourceLink}" target="_blank"><span>See Source</span><img src="images/github.png" alt=""></a></li>
+            <li id="first-list" class="font-Poppins flex"><a href="${cards[x].liveLink}" target="_blank"><span>See live</span><img src="images/watch.png" alt=""></a></li>
+            <li class="font-Poppins flex"><a href="${cards[x].sourceLink}" target="_blank"><span>See Source</span><img src="images/github.png" alt=""></a></li>
         </ul>
     </div>
 </div>
@@ -258,3 +256,5 @@ if (objLocal) {
   fullname.value = objLocal.fullname;
   message.value = objLocal.message;
 }
+
+// <img src="${value.imgLine}" alt="line">
