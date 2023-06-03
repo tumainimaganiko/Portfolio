@@ -87,6 +87,11 @@ ul {
   margin-bottom: 19px;
 }
 
+footer {
+  border-top: 1px solid #DFE1E6;
+  padding-bottom: 20px;
+}
+
 footer ul {
   justify-content: center;
   gap: 15px;
