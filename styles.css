@@ -709,10 +709,8 @@ footer ul {
   }
 
   .works {
-    grid-template-columns: 31.83% 31.83% 31.83%;
-    margin-bottom: 6%;
-    margin-left: 6%;
-    margin-right: 6%;
+    grid-template-columns: 31.83% 31.83% 31.83%;;
+    margin: 0 6% 6%;
     grid-gap: 15px;
     grid-template-rows: 200px auto;
   }
@@ -721,15 +719,15 @@ footer ul {
     grid-column: 1 / span 3;
     border-bottom: none;
     flex-direction: row;
-    width: 100%;
-    grid-row: auto;
+    /* width: 100%; */
     margin-top: 60px;
+    justify-content: space-between;
+    margin-right: 5%;
   }
 
   .card-1 h2 {
     text-align: left;
-    display: inline;
-    padding-left: 3%;
+    width: 40%;
   }
 
   .card-1 hr {
