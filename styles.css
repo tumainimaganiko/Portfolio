@@ -22,7 +22,7 @@ ul {
   font-weight: 400;
 }
 
-.popins-font{
+.popins-font {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -44,6 +44,7 @@ ul {
 .line-height-24 {
   line-height: 24px;
 }
+
 .toolbar {
   justify-content: space-between;
   background-color: #3c3a39;
@@ -88,7 +89,7 @@ ul {
 }
 
 footer {
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
   padding-bottom: 20px;
 }
 
@@ -266,7 +267,7 @@ footer ul {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;  
+  line-height: 24px;
   text-align: left;
   color: #fff;
   margin: 12px 13px;
@@ -278,12 +279,12 @@ footer ul {
 
 .inner-list li {
   margin: 15px 0;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 160%;
-  letter-spacing: 0em;
-  text-align: center;  
+  letter-spacing: 0;
+  text-align: center;
   color: #fff;
   font-style: normal;
 }
@@ -362,7 +363,6 @@ footer ul {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  
   text-align: left;
   margin: 0 24px;
   color: #f4f5f7;
@@ -392,7 +392,6 @@ footer ul {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  
   text-align: center;
   color: #fff;
 }
@@ -541,7 +540,6 @@ input[type='submit']:disabled {
 }
 
 .modal > ul {
-  
   display: flex;
   padding-left: 0.5rem;
 }
@@ -552,7 +550,6 @@ input[type='submit']:disabled {
 }
 
 .modal-body ul {
-  
   display: flex;
   padding-left: 0.5rem;
 }
@@ -640,7 +637,7 @@ input {
   margin: 10px 20px;
   padding: 10px;
   border: none;
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
 }
 
 @media only screen and (min-width: 768px) {
@@ -707,7 +704,8 @@ input {
     align-items: center;
     justify-content: center;
   }
-/* 31.83% 31.83% 31.83% */
+
+  /* 31.83% 31.83% 31.83% */
   .works {
     grid-template-columns: 31.83% 31.83% 31.83%;
     margin: 0 6% 6%;
@@ -719,6 +717,7 @@ input {
     grid-column: 1 / span 3;
     border-bottom: none;
     flex-direction: row;
+
     /* width: 100%; */
     margin-top: 60px;
     justify-content: space-between;
@@ -739,6 +738,7 @@ input {
     grid-column: 1 / span 3;
     display: flex;
     flex-direction: row;
+
     /* align-items: flex-start; */
   }
 
@@ -768,6 +768,10 @@ input {
   .card-2 ul {
     margin-left: 11px;
     padding-left: 12px;
+  }
+
+  .link-1 {
+    align-content: flex-end;
   }
 
   .button-1 {
@@ -802,8 +806,10 @@ input {
     align-items: center;
     transition: all 0.4s ease-in-out;
     background-image: url('./images/bgdesktop.svg');
+    background-repeat: no-repeat;
+    justify-content: flex-end;
   }
-  
+
   .none {
     display: none;
   }
@@ -846,7 +852,15 @@ input {
   }
 
   .cards > h2 {
-    overflow-y:auto;
+    overflow-y: auto;
+  }
+
+  .about-myself > svg {
+    display: none;
+  }
+
+  #illustration-two {
+    display: block;
   }
 
   .cards > p {
@@ -865,10 +879,10 @@ input {
   }
 
   .about-myself {
-    background-image: url("images/last image.png");
-    background-size: 400px;
+    background-image: url("images/illustration-about\ me.svg");
+    background-size: 40%;
     background-repeat: no-repeat;
-    background-position: right 10%;
+    background-position: right 15%;
   }
 
   #line-1 {
