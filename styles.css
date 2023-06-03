@@ -827,12 +827,20 @@ input {
   }
 
   .contact-form h2 {
-    min-width: 30%;
+    max-width: 45%;
     margin-left: 7%;
+  }
+
+  .cards > h2 {
+    overflow-y: auto;
   }
 
   .cards:hover h2 {
     display: none;
+  }
+
+  .cards > p {
+    overflow-y: scroll;
   }
 
   .modal-body > div p {
@@ -851,20 +859,12 @@ input {
     display: none;
   }
 
-  .cards > h2 {
-    overflow-y: auto;
-  }
-
   .about-myself > svg {
     display: none;
   }
 
   #illustration-two {
     display: block;
-  }
-
-  .cards > p {
-    overflow-y: scroll;
   }
 
   .last {
@@ -921,6 +921,7 @@ input {
     margin-top: 60px;
     flex-direction: column;
     margin-right: 6%;
+    width: 40%;
   }
 
   .container {
@@ -932,7 +933,9 @@ input {
   }
 
   input[type='submit'] {
-    margin-left: 0;
+    /* margin-left: 0; */
+    align-self: flex-start;
+    padding: 14px;
   }
 
   .modal {

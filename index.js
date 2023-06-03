@@ -148,7 +148,7 @@ function inputFunction(value, index) {
   const div = document.createElement('div');
   div.id = index;
   if (index === 0) {
-    div.classList.add('card-1','flex');
+    div.classList.add('card-1', 'flex');
     div.innerHTML = `
     <h2 class="font-Crete" >${value.heading}</h2>
     <hr>
