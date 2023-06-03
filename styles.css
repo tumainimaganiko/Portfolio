@@ -258,7 +258,6 @@ footer ul {
 .cards > h2 {
   font-size: 32px;
   line-height: 44px;
-  
   margin: 72px 19px 12px 13px;
   color: #fff;
 }
@@ -520,6 +519,7 @@ input[type='submit']:disabled {
   backdrop-filter: blur(5px);
   pointer-events: all;
   display: none;
+  z-index: 800;
 }
 
 .modal {
@@ -707,12 +707,12 @@ input {
     align-items: center;
     justify-content: center;
   }
-
+/* 31.83% 31.83% 31.83% */
   .works {
-    grid-template-columns: 31.83% 31.83% 31.83%;;
+    grid-template-columns: 31.83% 31.83% 31.83%;
     margin: 0 6% 6%;
     grid-gap: 15px;
-    grid-template-rows: 200px auto;
+    grid-template-rows: 200px auto 435px 435px;
   }
 
   .card-1 {
@@ -801,8 +801,9 @@ input {
     margin: 12px;
     align-items: center;
     transition: all 0.4s ease-in-out;
+    background-image: url('./images/bgdesktop.svg');
   }
-
+  
   .none {
     display: none;
   }
@@ -842,6 +843,14 @@ input {
 
   .cards:hover ul {
     display: none;
+  }
+
+  .cards > h2 {
+    overflow-y:auto;
+  }
+
+  .cards > p {
+    overflow-y: scroll;
   }
 
   .last {
@@ -932,9 +941,9 @@ input {
   }
 
   .modal-body > img {
-    width: 50%;
-    height: 60%;
-    padding: 2%;
+    width: 40%;
+    padding: 3%;
+    object-fit: cover;
   }
 
   .modal-body > div {
