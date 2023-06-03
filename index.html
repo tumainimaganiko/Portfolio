@@ -10,13 +10,13 @@
     <title>Tumaini-Maganiko portfolio</title>
 </head>
 <body>
-    <header class="toolbar">
-        <div id="my-logo">
+    <header class="toolbar flex">
+        <div id="my-logo" class="font-Roboto">
             <a href="#">My Logo</a>
         </div>
         <nav class="menu-bar">
             <img id="hamburger" src="images/Union.png" alt="menu bar">
-            <ul class="social-media">
+            <ul class="social-media flex">
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -33,18 +33,18 @@
             <li><a id="contact-link" href="#contact-block">Contact</a></li>
         </ul>
     </div>
-    <section class="headline-section">
+    <section class="headline-section flex font-Crete">
             <div id="information">
                 <h1>Hey There.<br>I'm Tumaini.</h1>
-            <h2>I'm a Software Developer</h2>
-        <div id="paragraph">
+            <h2 class="font-Roboto">I'm a Software Developer</h2>
+        <div id="paragraph" class="font-Poppins">
             <p>
                 I can help you build a product , feature or website Look through some of my work and experience!
                 If you like what you see and have a project you need coded, don't hesitate to contact me.
             </p>
         </div>
             </div>
-        <div class="social-media">
+        <div class="social-media flex">
             <ul>
                 <li><a href="#"><img src="images/github.png" alt="github"></a></li>
                 <li><a href="#"><img src="images/linkedin.png" alt="linkedin"></a></li>
@@ -61,8 +61,8 @@
     <div id="overlay"></div>
     <section id="about-div" class="about-myself">
         <div id="about-info">
-            <h2>About me</h2>
-            <p>
+            <h2 class="font-Crete">About me</h2>
+            <p class="letter-spacing">
                 Hello I'm a software developer! I can help you build a product ,
                 feature or website Look through some of my work and experience!
                 If you like what you see and have a project you need coded, don't hesitate to contact me.
@@ -74,9 +74,9 @@
         <hr id="line-2">
         <div class="categories">
                 <div class="outer-list">
-                    <div class="footer-heading font">
+                    <div class="footer-heading font letter-spacing">
                         <img src="images/rotated-rectangle.png" alt="Rotated rectangle">
-                        <span class="font">Language</span>
+                        <span class="font letter-spacing">Language</span>
                     </div>
                     <ul class="inner-list">
                         <li>Javascript</li>
@@ -86,9 +86,9 @@
                     </ul>
                 </div>
                 <div class="outer-list">
-                <div class="footer-heading font">
+                <div class="footer-heading font letter-spacing">
                     <img src="images/Rectangle.png" alt="Rectangle">
-                    <span class="font">Frameworks</span>
+                    <span class="font letter-spacing">Frameworks</span>
                 </div>
                 <ul class="inner-list">
                     <li>React.js</li>
@@ -98,9 +98,9 @@
                 </ul>
             </div>
                     <div class="outer-list">
-                        <div class="footer-heading font">
+                        <div class="footer-heading font letter-spacing">
                             <img src="images/circle.png" alt="circle">
-                            <span class="font">Skills</span>
+                            <span class="font letter-spacing">Skills</span>
                         </div>
                         <ul class="inner-list">
                             <li>Database Management</li>
@@ -113,19 +113,19 @@
         </div>
     </section>
     <section id="contact-block" class="contact-form">
-        <h2>
+        <h2 class="letter-spacing">
             I'm always interested in hearing about new projects,
              so if you'd like to chat please get in touch.
         </h2>
         <form action="https://formspree.io/f/xeqwlyqy" method="post" id="valid">
             <div class="container">
-                <input type="text" class="input-font" id="fullname" name="fullname" placeholder="Full Name" maxlength="30" required>
+                <input type="text" class="input-font letter-spacing" id="fullname" name="fullname" placeholder="Full Name" maxlength="30" required>
             </div>
             <div class="container">
-                <input type="email" class="input-font" id="email" name="email" placeholder="Email address" required>
+                <input type="email" class="input-font letter-spacing" id="email" name="email" placeholder="Email address" required>
             </div>
             <div class="last-div">
-                <textarea name="message" id="sms" cols="30" rows="10" maxlength="500" required placeholder="Write me something"></textarea>
+                <textarea name="message" id="sms" class="letter-spacing" cols="30" rows="10" maxlength="500" required placeholder="Write me something"></textarea>
             </div>
             <div id="container2" class="container">
                 <input type="submit" id="submit-button" value="Get in touch">
@@ -136,7 +136,7 @@
     </section>
 
     <footer class="social-meia">
-        <ul>
+        <ul class="flex">
             <li><a href="#"><img src="images/github 2.png" alt="github"></a></li>
             <li><a href="#"><img src="images/linked 2.png" alt="linkedin"></a></li>
             <li><a href="#"><img src="images/angellist 2.png" alt="anjelles"></a></li>
