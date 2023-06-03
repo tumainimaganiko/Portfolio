@@ -157,8 +157,8 @@ function inputFunction(value, index) {
     div.className = 'card-2';
     div.id = index;
     div.innerHTML = `
-    <img id="gym" src="${value.img}" alt="Placeholder">
-    <div id="1">
+    <img id="card-img" src="${value.img}" alt="Placeholder">
+    <div id=${index}>
         <h3 id="story" class="font-Crete">${value.heading}</h3>
     <p class="inter-font">${value.description}</p>
     <ul class="link-1 btn flex">
