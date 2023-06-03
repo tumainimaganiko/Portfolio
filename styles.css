@@ -4,8 +4,48 @@
   margin: 0;
 }
 
-.toolbar {
+.flex {
   display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.font-Roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.font-Crete {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+}
+
+.font-Poppins {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.font-Inter {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  
+}
+
+.letter-spacing {
+  letter-spacing: 0;
+}
+
+.line-height-24 {
+  line-height: 24px;
+}
+.toolbar {
   justify-content: space-between;
   background-color: #3c3a39;
   width: 100%;
@@ -16,7 +56,6 @@
   font-size: 18px;
   line-height: 24px;
   padding-left: 24px;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -50,11 +89,8 @@
 }
 
 footer ul {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 15px;
-  list-style-type: none;
   margin-top: 25px;
   padding-left: 0;
 }
@@ -64,7 +100,6 @@ footer ul {
 }
 
 .headline-section {
-  display: flex;
   order: 0;
   flex-direction: column;
   background-color: #1c1a19;
@@ -77,7 +112,6 @@ footer ul {
 
 .headline-section h1 {
   color: #ff6b00;
-  font-family: "Crete Round", serif;
   font-weight: 400;
   font-size: 56px;
   margin: 120px 24px 12px;
@@ -85,27 +119,19 @@ footer ul {
 
 .headline-section h2 {
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
   font-size: 24px;
   margin: 0 24px;
 }
 
 #paragraph {
   color: white;
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 12px 24px;
 }
 
 .social-media {
   margin: 0 24px;
-  display: flex;
   justify-content: flex-start;
-}
-
-.social-media ul {
-  list-style-type: none;
 }
 
 .social-media li {
@@ -123,13 +149,11 @@ footer ul {
 }
 
 .card-1 {
-  display: flex;
   align-items: center;
-  margin: 120px 24px 104px 24px;
+  margin: 120px 24px 20px 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #212121;
-  width: 327px;
-  height: 83px;
+  /* height: 83px; */
+  flex-direction: column;
 }
 
 .card-1 h2 {
@@ -137,11 +161,11 @@ footer ul {
   line-height: 52px;
   font-style: normal;
   font-weight: 400;
-  font-family: "Crete Round", serif;
+  padding-bottom: 20px;
 }
 
-.card-1 img {
-  display: none;
+.card-1 hr {
+  width: 100%;
 }
 
 .card-2 {
@@ -151,25 +175,15 @@ footer ul {
   margin-bottom: 12px;
 }
 
-.card-2 img {
-  margin: 0 24px;
-}
-
-#gym-2 {
-  display: none;
-}
-
 #story {
   font-size: 32px;
   line-height: 52px;
-  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   margin: 12px 24px 0;
 }
 
 .card-2 p {
-  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -179,8 +193,6 @@ footer ul {
 }
 
 .link-1 {
-  display: flex;
-  list-style-type: none;
   padding: 10px 12px;
 }
 
@@ -195,7 +207,6 @@ footer ul {
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: 0;
   color: #fff;
   padding: 10px 12px;
   display: block;
@@ -243,11 +254,9 @@ footer ul {
 }
 
 .card-3 > h2 {
-  font-family: "Crete Round", serif;
   font-size: 32px;
-  font-weight: 400;
   line-height: 44px;
-  letter-spacing: 0;
+  
   margin: 72px 19px 12px 13px;
   color: #fff;
 }
@@ -257,7 +266,7 @@ footer ul {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0;
+  
   text-align: left;
   color: #fff;
   margin: 12px 13px;
@@ -268,7 +277,18 @@ footer ul {
 }
 
 .inner-list li {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
+  margin: 15px 0;
+  font-family: 'Inter',sans-serif;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;  
+  color: #fff;
+}
+
+.input-font:focus {
+  border-color: #fff;
 }
 
 .bottom-btn {
@@ -279,14 +299,8 @@ footer ul {
 
 .bottom-btn li {
   background-color: #f55800;
-  display: flex;
   padding: 12px;
   margin: 12px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
   width: 100px;
   justify-content: space-between;
 }
@@ -310,11 +324,6 @@ footer ul {
   padding: 12px;
   margin: 6px;
   border: 1px solid black;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
 }
 
 #menu-list {
@@ -323,7 +332,6 @@ footer ul {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  list-style-type: none;
   padding: 50px 25px;
 }
 
@@ -343,9 +351,7 @@ footer ul {
 }
 
 .about-myself h2 {
-  font-family: "Crete Round", serif;
   font-size: 72px;
-  font-weight: 400;
   line-height: 88px;
   letter-spacing: 0.3700000047683716px;
   text-align: left;
@@ -358,7 +364,7 @@ footer ul {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0;
+  
   text-align: left;
   margin: 0 24px;
   color: #f4f5f7;
@@ -388,7 +394,7 @@ footer ul {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0;
+  
   text-align: center;
   color: #fff;
 }
@@ -398,17 +404,6 @@ footer ul {
   flex-direction: column;
   margin-top: 100px;
   align-items: center;
-}
-
-.inner-list {
-  font-family: "Inter", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 43px;
-  letter-spacing: 0;
-  text-align: center;
-  color: #fff;
-  list-style-type: none;
 }
 
 .outer-list {
@@ -438,7 +433,7 @@ footer ul {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0;
+  
   text-align: center;
   color: #172b4d;
 }
@@ -448,7 +443,7 @@ footer ul {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0;
+  
   width: 295px;
   height: 18px;
   border: none;
@@ -481,7 +476,7 @@ footer ul {
   font-style: italic;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0;
+  
   text-align: left;
 }
 
@@ -566,7 +561,7 @@ footer ul {
 }
 
 .modal > ul {
-  list-style-type: none;
+  
   display: flex;
   padding-left: 0.5rem;
 }
@@ -577,7 +572,7 @@ footer ul {
 }
 
 .modal-body ul {
-  list-style-type: none;
+  
   display: flex;
   padding-left: 0.5rem;
 }
@@ -591,8 +586,6 @@ footer ul {
 }
 
 .h2-color {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
@@ -654,6 +647,10 @@ footer ul {
   text-decoration: none;
 }
 
+#gym {
+  width: 95%;
+}
+
 @media only screen and (min-width: 768px) {
   #my-logo {
     padding-left: 10%;
@@ -670,7 +667,6 @@ footer ul {
   .menu-bar ul {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
     justify-content: space-between;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -724,7 +720,6 @@ footer ul {
   .card-1 {
     grid-column: 1 / span 3;
     border-bottom: none;
-    display: flex;
     flex-direction: row;
     width: 100%;
     grid-row: auto;
@@ -737,8 +732,7 @@ footer ul {
     padding-left: 3%;
   }
 
-  .card-1 img {
-    display: block;
+  .card-1 hr {
     padding-left: 24px;
     width: 60%;
   }
@@ -748,10 +742,6 @@ footer ul {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-  }
-
-  #gym-1 {
-    display: none;
   }
 
   #description {
@@ -765,8 +755,7 @@ footer ul {
     margin-top: 0;
   }
 
-  #gym-2 {
-    display: block;
+  #gym {
     width: 50%;
     height: 90%;
     margin-right: 0;
