@@ -700,10 +700,6 @@ input {
     height: 80%;
   }
 
-  #paragraph {
-    width: 50%;
-  }
-
   .social-media ul {
     display: flex;
     flex-direction: column;
@@ -765,6 +761,7 @@ input {
 
   .card-2 ul {
     margin-left: 11px;
+    padding-left: 12px;
   }
 
   .button-1 {
