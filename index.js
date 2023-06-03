@@ -1,34 +1,36 @@
 const btnMenu = document.getElementById('hamburger');
 const xBtn = document.getElementById('x-mark');
 
-function myFunction() {
+function displayMenu() {
   const element = document.querySelector('.toolbar');
-  const list = document.getElementById('option');
+  const mobileMenu = document.getElementById('mobile-menu');
   element.style.display = 'none';
-  list.style.display = 'block';
+  mobileMenu.style.display = 'block';
 }
 
-function closing() {
+function closingMenu() {
   const element = document.querySelector('.toolbar');
-  const list = document.getElementById('option');
+  const list = document.getElementById('mobile-menu');
   element.style.display = 'flex';
   list.style.display = 'none';
 }
 
-btnMenu.addEventListener('click', myFunction);
+btnMenu.addEventListener('click', displayMenu);
 
-xBtn.addEventListener('click', closing);
+xBtn.addEventListener('click', closingMenu);
 
 const btn1 = document.getElementById('about-link');
 const btn2 = document.getElementById('contact-link');
 const btn3 = document.getElementById('port');
 
-btn1.addEventListener('click', closing);
-btn2.addEventListener('click', closing);
-btn3.addEventListener('click', closing);
+btn1.addEventListener('click', closingMenu);
+btn2.addEventListener('click', closingMenu);
+btn3.addEventListener('click', closingMenu);
 
-const form = document.querySelector('#valid');
+const form = document.querySelector('form');
 const emailInput = document.querySelector('#email');
+const fullname = document.querySelector('#fullname');
+const message = document.querySelector('textarea');
 const errorMessage = document.querySelector('#error-message');
 
 function showError(message) {
@@ -44,17 +46,18 @@ form.addEventListener('submit', (event) => {
   } else {
     showError('');
     form.submit();
+    emailInput.value = '';
+    fullname.value = '';
+    message.value = '';
   }
 });
 
 const cards = [
   {
     heading: 'My Recent Works',
-    imgLine: 'images/line.png',
   },
   {
-    img1: 'images/todo_1.png',
-    img2: 'images/todo.png',
+    img: 'images/todo.png',
     heading: 'TO DO LIST APP',
     description: `A to-do list app is a productivity tool designed to help users to create and 
                   maintain lists of tasks that they need to complete and it allows user to edit
@@ -145,41 +148,40 @@ function inputFunction(value, index) {
   const div = document.createElement('div');
   div.id = index;
   if (index === 0) {
-    div.className = 'card-1';
+    div.classList.add('card-1', 'flex');
     div.innerHTML = `
-    <h2 >${value.heading}</h2>
-    <img src="${value.imgLine}" alt="line">
+    <h2 class="font-Crete" >${value.heading}</h2>
+    <hr>
     `;
   } else if (index === 1) {
     div.className = 'card-2';
     div.id = index;
     div.innerHTML = `
-    <img id="gym-1" src="${value.img1}" alt="Placeholder">
-    <img id="gym-2" src="${value.img2}" alt="Placeholder">
-    <div id="1">
-        <h3 id="story">${value.heading}</h3>
-    <p>${value.description}</p>
-    <ul class="link-1 btn">
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">Bootstrap</a></li>
-        <li><a href="#">RUBY</a></li>
+    <img id="card-img" src="${value.img}" alt="Placeholder">
+    <div id=${index}>
+        <h3 id="story" class="font-Crete">${value.heading}</h3>
+    <p class="inter-font">${value.description}</p>
+    <ul class="link-1 btn flex">
+        <li><a class="letter-spacing" href="#">CSS</a></li>
+        <li><a class="letter-spacing" href="#">HTML</a></li>
+        <li><a class="letter-spacing" href="#">Bootstrap</a></li>
+        <li><a class="letter-spacing" href="#">RUBY</a></li>
     </ul>
-    <a class="see-project btn-click button-1" href="">See project</a>
+    <a class="see-project-btn btn-click button-1" href="">See project</a>
     </div>
     `;
   } else {
-    div.className = 'card-3';
+    div.className = 'cards';
     div.id = index;
     div.innerHTML = `
-  <h2>${value.heading}</h2>
-  <p>${value.description}</p>
-  <ul class="link-1">
+  <h2 class="font-Crete">${value.heading}</h2>
+  <p class="letter-spacing">${value.description}</p>
+  <ul class="link-1 flex">
       <li><a href="#">HTML</a></li>
       <li><a href="#">Bootstrap</a></li>
       <li><a href="#">RUBY</a></li>
   </ul>
-  <a  class="see-project none btn-click" href="">See project</a>
+  <a  class="see-project-btn none btn-click" href="">See project</a>
   `;
   }
   works.appendChild(div);
@@ -200,13 +202,13 @@ btnClick.forEach((btn) => {
     modal.style.display = 'block';
     modal.innerHTML = `
     <div class="modal-header">
-    <h2 class="h2-color">${cards[x].heading}</h2>
+    <h2 class="h2-color font-Roboto">${cards[x].heading}</h2>
     <button class="close-button">&times;</button>
 </div>
 <ul>
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">Bootstrap</a></li>
-    <li><a href="#">Ruby on Rails</a></li>
+    <li class="popins-font"><a href="#">HTML</a></li>
+    <li class="popins-font"><a href="#">Bootstrap</a></li>
+    <li class="popins-font"><a href="#">Ruby on Rails</a></li>
 </ul>
 <div class="modal-body">
    
@@ -214,8 +216,8 @@ btnClick.forEach((btn) => {
     <div>
         <p>${cards[x].details}</p>
         <ul class="bottom-btn">
-            <li id="first-list"><a href="${cards[x].liveLink}" target="_blank"><span>See live</span><img src="images/watch.png" alt=""></a></li>
-            <li><a href="${cards[x].sourceLink}" target="_blank"><span>See Source</span><img src="images/github.png" alt=""></a></li>
+            <li id="first-list" class="popins-font flex"><a href="${cards[x].liveLink}" target="_blank"><span>See live</span><img src="images/watch.png" alt=""></a></li>
+            <li class="popins-font flex"><a href="${cards[x].sourceLink}" target="_blank"><span>See Source</span><img src="images/github.png" alt=""></a></li>
         </ul>
     </div>
 </div>
@@ -237,8 +239,6 @@ document.addEventListener('click', (e) => {
 });
 
 // Data preservation
-const fullname = document.querySelector('#fullname');
-const message = document.querySelector('#sms');
 
 const saveLocal = () => {
   const storeLocal = {
