@@ -27,8 +27,10 @@ btn1.addEventListener('click', closing);
 btn2.addEventListener('click', closing);
 btn3.addEventListener('click', closing);
 
-const form = document.querySelector('#valid');
+const form = document.querySelector('form');
 const emailInput = document.querySelector('#email');
+const fullname = document.querySelector('#fullname');
+const message = document.querySelector('textarea');
 const errorMessage = document.querySelector('#error-message');
 
 function showError(message) {
@@ -44,6 +46,9 @@ form.addEventListener('submit', (event) => {
   } else {
     showError('');
     form.submit();
+    emailInput.value = '';
+    fullname.value = '';
+    message.value = '';
   }
 });
 
@@ -156,7 +161,7 @@ function inputFunction(value, index) {
     <img id="gym" src="${value.img2}" alt="Placeholder">
     <div id="1">
         <h3 id="story" class="font-Crete">${value.heading}</h3>
-    <p class="font-Inter">${value.description}</p>
+    <p class="inter-font">${value.description}</p>
     <ul class="link-1 btn flex">
         <li><a class="letter-spacing" href="#">CSS</a></li>
         <li><a class="letter-spacing" href="#">HTML</a></li>
@@ -202,9 +207,9 @@ btnClick.forEach((btn) => {
     <button class="close-button">&times;</button>
 </div>
 <ul>
-    <li class="font-Poppins"><a href="#">HTML</a></li>
-    <li class="font-Poppins"><a href="#">Bootstrap</a></li>
-    <li class="font-Poppins"><a href="#">Ruby on Rails</a></li>
+    <li class="popins-font"><a href="#">HTML</a></li>
+    <li class="popins-font"><a href="#">Bootstrap</a></li>
+    <li class="popins-font"><a href="#">Ruby on Rails</a></li>
 </ul>
 <div class="modal-body">
    
@@ -212,8 +217,8 @@ btnClick.forEach((btn) => {
     <div>
         <p>${cards[x].details}</p>
         <ul class="bottom-btn">
-            <li id="first-list" class="font-Poppins flex"><a href="${cards[x].liveLink}" target="_blank"><span>See live</span><img src="images/watch.png" alt=""></a></li>
-            <li class="font-Poppins flex"><a href="${cards[x].sourceLink}" target="_blank"><span>See Source</span><img src="images/github.png" alt=""></a></li>
+            <li id="first-list" class="popins-font flex"><a href="${cards[x].liveLink}" target="_blank"><span>See live</span><img src="images/watch.png" alt=""></a></li>
+            <li class="popins-font flex"><a href="${cards[x].sourceLink}" target="_blank"><span>See Source</span><img src="images/github.png" alt=""></a></li>
         </ul>
     </div>
 </div>
@@ -235,8 +240,6 @@ document.addEventListener('click', (e) => {
 });
 
 // Data preservation
-const fullname = document.querySelector('#fullname');
-const message = document.querySelector('#sms');
 
 const saveLocal = () => {
   const storeLocal = {
@@ -256,5 +259,3 @@ if (objLocal) {
   fullname.value = objLocal.fullname;
   message.value = objLocal.message;
 }
-
-// <img src="${value.imgLine}" alt="line">

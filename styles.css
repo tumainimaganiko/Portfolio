@@ -22,7 +22,7 @@ ul {
   font-weight: 400;
 }
 
-.font-Poppins {
+.popins-font{
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -30,12 +30,11 @@ ul {
   line-height: 16px;
 }
 
-.font-Inter {
+.inter-font {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  
 }
 
 .letter-spacing {
@@ -277,7 +276,6 @@ footer ul {
 }
 
 .inner-list li {
-  /* margin-bottom: 32px; */
   margin: 15px 0;
   font-family: 'Inter',sans-serif;
   font-weight: 400;
@@ -285,10 +283,6 @@ footer ul {
   letter-spacing: 0em;
   text-align: center;  
   color: #fff;
-}
-
-.input-font:focus {
-  border-color: #fff;
 }
 
 .bottom-btn {
@@ -433,21 +427,8 @@ footer ul {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  
   text-align: center;
   color: #172b4d;
-}
-
-.input-font {
-  text-align: left;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  
-  width: 295px;
-  height: 18px;
-  border: none;
-  padding: 0;
 }
 
 .container {
@@ -465,9 +446,8 @@ footer ul {
   margin-top: 24px;
 }
 
-#sms {
-  width: 303px;
-  height: 90px;
+textarea {
+  height: 114px;
   background-color: rgb(251, 248, 247);
   padding: 12px;
   border: none;
@@ -476,15 +456,12 @@ footer ul {
   font-style: italic;
   font-weight: 400;
   line-height: 24px;
-  
   text-align: left;
+  margin: 12px;
 }
 
-#submit-button {
-  font-family: "Inter", sans-serif;
-  font-size: 17px;
+input[type='submit'] {
   font-weight: 700;
-  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
   padding: 12px;
@@ -494,25 +471,25 @@ footer ul {
   color: #fff;
   border: none;
   margin-bottom: 78px;
-  flex-grow: 0;
+  align-self: center;
 }
 
-#submit-button:visited {
+input[type='submit']:visited {
   background-color: #ff6b00;
 }
 
-#submit-button:hover {
+input[type='submit']:hover {
   background-color: #fff5e1;
   color: #f55800;
   border: 1px solid #f55800;
 }
 
-#submit-button:active {
+input[type='submit']:active {
   background-color: #e05304;
   color: #fff;
 }
 
-#submit-button:disabled {
+input[type='submit']:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
 }
@@ -649,6 +626,18 @@ footer ul {
 
 #gym {
   width: 95%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #DBD8D7;
 }
 
 @media only screen and (min-width: 768px) {
@@ -886,13 +875,8 @@ footer ul {
     border-bottom: 1px solid #dfe1e6;
   }
 
-  .input-font {
-    width: 600px;
-  }
-
   form {
     margin-top: 60px;
-    display: flex;
     flex-direction: column;
     margin-right: 6%;
   }
@@ -905,7 +889,7 @@ footer ul {
     width: 600px;
   }
 
-  #submit-button {
+  input[type='submit'] {
     margin-left: 0;
   }
 
