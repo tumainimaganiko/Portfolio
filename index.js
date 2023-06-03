@@ -57,8 +57,7 @@ const cards = [
     heading: 'My Recent Works',
   },
   {
-    img1: 'images/todo_1.png',
-    img2: 'images/todo.png',
+    img: 'images/todo.png',
     heading: 'TO DO LIST APP',
     description: `A to-do list app is a productivity tool designed to help users to create and 
                   maintain lists of tasks that they need to complete and it allows user to edit
@@ -158,7 +157,7 @@ function inputFunction(value, index) {
     div.className = 'card-2';
     div.id = index;
     div.innerHTML = `
-    <img id="gym" src="${value.img2}" alt="Placeholder">
+    <img id="gym" src="${value.img}" alt="Placeholder">
     <div id="1">
         <h3 id="story" class="font-Crete">${value.heading}</h3>
     <p class="inter-font">${value.description}</p>
